@@ -10,14 +10,14 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 
 ### Relationships
 
-- **Military Member** has **one or more Specialties**. **Specialty** can belong to 0 or N members.
-- **Military Member** has **one Rank**. **Rank** can belong to 0 or N members.
+- **Military Member** has **1 or N Specialties**. **Specialty** can belong to 0 or N members.
+- **Military Member** has **1 Rank**. **Rank** can belong to 0 or N members.
 - **Military Member** has 0 or 1 supervisor (recursive relationship with another member).
-- **Military Member** can manage one or more **Missions**. Each **Mission** is managed by one **Military Member** (must be sergeant or higher rank).
+- **Military Member** (must be sergeant or higher rank) can manage 0 or N **Missions**. Each **Mission** is managed by 1 **Military Member** (must be sergeant or higher rank).
 - **Military Base** IS-A **Personnel facility** or **Storage facility**.
 - **Military Member** belongs to 0 or 1 **Military Base (Personnel facility)**. **Military Base (Personnel facility)** has 0 or N **Military Members**.
-- **Military Base** is located in **one Location**. **One Location** can have 0 or N **Military Bases**.
-- One or more **Military Members** can participate in a **Mission**.
+- **Military Base** is located in **1 Location**. **Location** can have 0 or N **Military Bases**.
+- **Military Members** can participate in only 1 **Mission** at a time, **Mission** can have 1 or N **Military Members**.
 - **Vehicle** is assigned to **one Military Base (Storage facility)**. **Military Base (Storage facility)** can have multiple **Vehicles**.
 - **Equipment** originates from **one Military Base (Storage facility)**. **Military Base (Storage facility)** can have multiple **Equipment**.
 - **Military Member** can use 0 or N **Equipment**, **Equipment** can be used by 0 or 1 **Military Member**.
