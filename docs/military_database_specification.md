@@ -22,6 +22,7 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 - **Equipment** originates from **one Military Base (Storage facility)**. **Military Base (Storage facility)** can have multiple **Equipment**.
 - **Military Member** can use 0 or N **Equipment**, **Equipment** can be used by 0 or 1 **Military Member**.
 - **Military Member** can use 0 or 1 **Vehicle**, **Vehicle** can be used by 0 or 1 **Military Member**.
+- **Military Member** can receive 0 or N **Service Medals**. Each **Service Medal** must belong to exactly 1 **Military Member**.
 
 ### Entities
 
@@ -83,6 +84,11 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `status` (planned, active, completed, cancelled)
     - `commander_id` (references **Military Member**) ; Only Rank allowed: Sergeant or higher
 
+11. **Service Medal** (Weak Entity)
+    - `soldier_id` (references **Military Member**)
+    - `award_date`
+    - `medal_type`
+    - `description` (why the medal was awarded)
 
 ---
 
@@ -116,4 +122,3 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `status` (using, repairing)
     - `start_date`
     - `end_date`
-
