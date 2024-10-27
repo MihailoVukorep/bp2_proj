@@ -4,7 +4,9 @@
 ## Description:
 System will serve for military management purposes.
 
-The motivation and goal is to keep track of personnel, equipment, vehicles and missions across multiple bases.
+The motivation and goal is to keep track of personnel, equipment, vehicles and missions across multiple bases. Recording the dates in some entities will ensure we perserve useful historical data.
+
+
 
 ## Entites & Relationships 
 
@@ -84,7 +86,7 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `status` (planned, active, completed, cancelled)
     - `commander_id` (references **Military Member**) ; Only Rank allowed: Sergeant or higher
     - `location_id` (references **Location**)
-    
+
 11. **Service Medal** (Weak Entity)
     - `soldier_id` (references **Military Member**)
     - `award_date`
