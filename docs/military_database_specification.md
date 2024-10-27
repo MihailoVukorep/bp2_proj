@@ -58,7 +58,7 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `equipment_id`
     - `equipment_type_id` (references **Equipment Type**)
     - `status` (functional, broken)
-    - `base_id` (references **Military Base (Storage facility)**)
+    - `base_id` (references **Military Base (Storage facility)**) - might be null
 
 7. **Equipment Type**
     - `equipment_type_id`
@@ -67,7 +67,7 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 8. **Vehicle**  
     - `vehicle_id`
     - `vehicle_type_id` (references **Vehicle Type**)
-    - `base_id` (references **Military Base (Storage facility)**)
+    - `base_id` (references **Military Base (Storage facility)**) - might be null
 
 9. **Vehicle Type**
     - `vehicle_type_id`
@@ -86,41 +86,22 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 
 ---
 
-1. **Command Assignment** (Gerund)
-    - `command_assignment_id`
-    - `soldier_id`
-    - `base_id`
-    - `start_date`
-    - `end_date`
-
-2. **Member Specialty** (Gerund)
+1. **Member Specialty**
     - `member_specialty_id`
     - `soldier_id`
     - `specialty_id`
 
-3. **Equipment Stored At** (Gerund)
-    - `equipment_assignment_id`
-    - `equipment_id` (references **Equipment**)
-    - `base_id` (references **Military Base (Storage facility)**)
-    - `assigned_date`
-
-4. **Vehicle Stored At** (Gerund)
-    - `vehicle_assignment_id`
-    - `vehicle_id` (references **Vehicle**)
-    - `base_id` (references **Military Base (Storage facility)**)
-    - `assigned_date`
-
-5. **Reporting Hierarchy** (Recursion)
+2. **Reporting Hierarchy**
     - `reporting_hierarchy_id`
     - `soldier_id`
     - `supervisor_id`
 
-6. **Mission Member** (Gerund)
+3. **Mission Member Participation**
     - `mission_member_id`
     - `mission_id` (references **Mission**)
     - `soldier_id` (references **Military Member**)
 
-7. **Equipment Using** (Gerund)
+4. **Equipment Using**
     - `equipment_using_id`
     - `equipment_id` (references **Equipment**)
     - `soldier_id` (references **Military Member**)
@@ -128,7 +109,7 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `start_date`
     - `end_date`
 
-8. **Vehicle Using** (Gerund)
+5. **Vehicle Using**
     - `vehicle_using_id`
     - `vehicle_id` (references **Vehicle**)
     - `soldier_id` (references **Military Member**)
