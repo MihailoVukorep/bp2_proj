@@ -83,7 +83,8 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `end_date`
     - `status` (planned, active, completed, cancelled)
     - `commander_id` (references **Military Member**) ; Only Rank allowed: Sergeant or higher
-
+    - `location_id` (references **Location**)
+    
 11. **Service Medal** (Weak Entity)
     - `soldier_id` (references **Military Member**)
     - `award_date`
