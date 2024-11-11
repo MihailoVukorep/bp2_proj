@@ -23,6 +23,9 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 - **Military Member** owns 0 or N **Equipment**, **Equipment** is owned by 0 or 1 **Military Member**.
 - **Military Member** drives 0 or 1 **Vehicle**, **Vehicle** is driven by 0 or 1 **Military Member**.
 - **Mission Participation** (Military Member+Mission) can be awarded 0 or 1 **Service Medals**. **Mission Participation** can have 0 or 1 **Service Medals**.
+- **Vehicle** is one Type.
+- **Equipment** is one Type.
+- **Service Medal** is one Type.
 
 ### Entities
 1. **Military Member**
@@ -89,8 +92,12 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 11. **Service Medal** (Weak Entity)
     - `mission_participation_id` (references **Mission Participation**)
     - `award_date`
-    - `medal_type`
+    - `service_medal_type_id` (references **Service Medal Type**)
     - `description` (why the medal was awarded)
+
+12. **Service Medal Type**
+    - `service_medal_type_id`
+    - `name`
 
 ---
 
