@@ -23,11 +23,11 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
 - **Military Member** owns 0 or N **Equipment**, **Equipment** is owned by 0 or 1 **Military Member**.
 - **Military Member** drives 0 or 1 **Vehicle**, **Vehicle** is driven by 0 or 1 **Military Member**.
 - **Mission Participation** (Military Member+Mission) can be awarded 0 or 1 **Service Medals**. **Mission Participation** can have 0 or 1 **Service Medals**.
-- **Vehicle** is one Type.
-- **Equipment** is one Type.
-- **Service Medal** is one Type.
+- **Vehicle** is one **Vehicle Type**. **Vehicle Type** can have 0 or N **Vehicles**. 
+- **Equipment** is one **Equipment Type**. **Equipment Type** can have 0 or N **Equipments**. 
+- **Service Medal** is one **Service Medal Type**. **Service Medal Type** can have 0 or N **Service Medals**. 
 
-### Entities
+### Entities (with foreign keys)
 1. **Military Member**
     - `soldier_id` (unique member identifier)
     - `first_name`
@@ -100,6 +100,8 @@ The motivation and goal is to keep track of personnel, equipment, vehicles and m
     - `name`
 
 ---
+
+## Other tables. Gerunds. etc.
 
 1. **Member Specialty**
     - `member_specialty_id`
