@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D10E45B-E083-BD83-E20A-152BDA482976" name="Vehicle Type">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:51:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vehicle_type_id" id="572DC285-8FD7-5A07-0E9F-87669DD275CD">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:51:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model_name" id="23421493-A2FD-3290-3DE2-21FBAEE3415F">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:51:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="6F628898-00D1-DB47-B3AF-8086B6E20C42">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:51:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A4EDAA57-AEEE-A166-C388-4BA2AB6EC76A" name="Vehicle Type PK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:51:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>572DC285-8FD7-5A07-0E9F-87669DD275CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

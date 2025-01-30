@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C0D29813-2349-4FAA-1A25-1488F16238C7" name="Location">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:48:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="location_id" id="8FD9C7FA-3441-699C-1C35-16DD5383259B">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:48:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country" id="AB7636A3-CAC1-CEA7-4FDA-A9D5BC028369">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:48:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="B7F18B63-AF4B-F03C-EF8F-5842CDB88316">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:48:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE81C5EA-3906-0F33-E123-0A43944F7477" name="Location PK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 14:48:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8FD9C7FA-3441-699C-1C35-16DD5383259B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

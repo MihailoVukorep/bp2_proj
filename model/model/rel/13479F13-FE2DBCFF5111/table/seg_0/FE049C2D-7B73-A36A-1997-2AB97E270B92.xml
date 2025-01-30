@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE049C2D-7B73-A36A-1997-2AB97E270B92" name="Service_Medal_Type">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>CB81F44B-3BA0-4053-ECAD-03DB95CEBA23</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Service_Medal_mission_participation_id" id="011CCCB1-D93F-528A-420C-5A72E4A2F29B">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>18F27A59-3973-E740-1859-7EB60C034930</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33ABC20E-3AFC-5426-A16D-19C86042FC9F" referredColumn="1DCD8771-B7AA-6F50-D65B-9C4048325745"/>
+</associations>
+</Column>
+<Column name="name" id="C2D90167-07BF-FCF7-15C0-7BC501CAD176">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:43:43 UTC</createdTime>
+<generatorID>A7A7B9DB-2CF2-14C1-5BEC-1DC783150F64</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7C73822-D463-A211-557E-B65598E45C16" name="Service_Medal_Type_Service_Medal_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>6559D34C-82D7-6D06-138A-668CB5D019D6</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="011CCCB1-D93F-528A-420C-5A72E4A2F29B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79D15644-1B3F-E48C-AF07-53892C5495DB" name="Specialty">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>0433FFB1-02FC-0BB0-6E10-55460D344F5E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="specialty_id" id="77987C0F-B2E4-580D-ECB8-DA9C4F028E82">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>7D36914B-4DF1-08B5-9746-6479EE5CDED7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7D21EEC8-57CF-11CD-5F56-6689F435F588">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>B9B4F476-A9BA-1B07-F02D-9FD6B4CB33CF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="E4F83ACB-266B-7ACD-F914-20AB2613A5F3">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>834F90FD-AF6C-45AB-C6C5-41FFF7D8BD08</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="634BDB95-793F-9F9B-FED4-454BA318F7BD" name="Specialty_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>B402F3D9-C56D-9265-66B9-A30BA4B4358E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77987C0F-B2E4-580D-ECB8-DA9C4F028E82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

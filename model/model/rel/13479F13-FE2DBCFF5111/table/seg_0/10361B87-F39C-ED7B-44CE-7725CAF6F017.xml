@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10361B87-F39C-ED7B-44CE-7725CAF6F017" name="Vehicle">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>3FD76607-6D3E-C586-230E-5DF2EF7671D7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicle_id" id="D86B26C5-59D4-403A-0255-8C1F6E798CF7">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>4386F602-FC39-09D1-1589-41C7664BBD70</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_name" id="BB2726C7-61C2-5730-0B28-91B3E05CCBD7">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>2707429C-850C-2919-5A7D-8CF1DEEA01C2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="56D76E40-0385-3D7A-6580-340A9B08E7D8">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>81A2B429-73D6-61BF-1E22-165B63201A7D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Military_Member_soldier_id" id="855C8EC4-2112-CAAE-2EBE-82ABCBD5DBED">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>4A49D763-74C3-0F76-8C09-F743A275A62F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D30B1B2-7D60-7476-0C68-80872C2BEEA1" referredColumn="B96573F6-82E6-5DAD-9672-2148C111912E"/>
+</associations>
+</Column>
+<Column name="Vehicle_Type_vehicle_type_id" id="6542F7B2-4C15-D53C-C7AC-8368CA41B2DA">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>DD652041-BC22-E837-0D59-482DD4969ECA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07C6F60C-C39F-7ADA-ECA1-E4AC69E16A96" referredColumn="628C2617-38AB-6C5D-24F7-EAEEE66FFAFB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F19393B-8CCB-49A5-55A3-DCA4A137CF9D" name="Vehicle_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>A9E729E8-A5F5-40D2-7EA4-01B7E7524498</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D86B26C5-59D4-403A-0255-8C1F6E798CF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AD708D5-7FFC-A2BE-9765-952765A42FBD" name="Vehicle__IDX">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>283E0653-5B72-FA3E-ECF6-85282D0F055E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="855C8EC4-2112-CAAE-2EBE-82ABCBD5DBED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3805844D-DB32-4EFA-660D-2B525FB40DBD" name="Vehicle_Vehicle_Type_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>03DF5391-6ED0-3002-D57C-F7616471A09B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6542F7B2-4C15-D53C-C7AC-8368CA41B2DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EADD83AF-792E-13E7-6E12-3905933584B2" name="Vehicle_Military_Member_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:55:08 UTC</createdTime>
+<generatorID>283E0653-5B72-FA3E-ECF6-85282D0F055E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="855C8EC4-2112-CAAE-2EBE-82ABCBD5DBED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B0EA89F-6617-8E57-4BCA-CC3DF835481A" name="Vehicle_Military_Base_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:55:08 UTC</createdTime>
+<generatorID>A088DA16-C224-773C-4299-3F32010675C9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

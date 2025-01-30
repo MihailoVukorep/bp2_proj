@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5C87908-32F6-2596-6DA1-9543A4F06D0D" containerWithKeyObject="C3293BA0-BCA6-28DB-825B-AB29E47CBF01" localFKIndex="5390894F-48FF-0AF7-FB5C-4281C1EF3298" name="Mission_Participate_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 16:12:41 UTC</createdTime>
+<generatorID>6322B5A8-A3E5-780E-3094-5D5ABF081F04</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Participate</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C57F26D5-A1A0-BF54-1F88-161049FD4497</referredTableID>
+<keyObject>E4B569CA-76A3-17A3-2DFE-1B77866E10CB</keyObject>
+<referredKeyID>E4B569CA-76A3-17A3-2DFE-1B77866E10CB</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

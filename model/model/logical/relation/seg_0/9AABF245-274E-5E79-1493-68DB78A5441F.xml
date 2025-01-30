@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="is equipment type" directorySegmentName="seg_0" id="9AABF245-274E-5E79-1493-68DB78A5441F">
+<createdBy>user</createdBy>
+<createdTime>2025-01-30 15:22:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<sourcePk>163A2275-4A12-A525-658B-0640142FFAA3</sourcePk>
+<targetPk>AA799241-E623-1467-5406-5B8F5930DD49</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>409E30F0-0602-E452-D7C9-85A83B8C315C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0FC9485F-E443-879F-61BE-03BF15D4C012</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
