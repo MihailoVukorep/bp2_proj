@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E160F82C-B18E-63B4-4E00-0FEDE38F5DAE" name="Location">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>C0D29813-2349-4FAA-1A25-1488F16238C7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="l_id" id="C210AFF3-F94C-036A-A252-92E1E2C07D59">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>8FD9C7FA-3441-699C-1C35-16DD5383259B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="3866E4F3-F438-BA40-D6AF-1FB631DEF8EB">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>AB7636A3-CAC1-CEA7-4FDA-A9D5BC028369</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="4669EE38-4691-DAFE-F7E8-C426E08D9BBD">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>B7F18B63-AF4B-F03C-EF8F-5842CDB88316</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61E6F035-F3BF-20AF-1A71-1B3953466105" name="Location_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>FE81C5EA-3906-0F33-E123-0A43944F7477</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C210AFF3-F94C-036A-A252-92E1E2C07D59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

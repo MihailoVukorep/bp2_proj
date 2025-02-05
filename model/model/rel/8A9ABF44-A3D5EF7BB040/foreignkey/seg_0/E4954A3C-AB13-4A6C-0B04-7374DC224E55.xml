@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E4954A3C-AB13-4A6C-0B04-7374DC224E55" containerWithKeyObject="AF60E0E0-421E-28BE-31C8-81FD707AD06C" localFKIndex="6953E3ED-CADC-F228-4A0E-56CBE3E51191" name="Participation_Mission_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>447982A4-6E4B-E639-4796-EFC2799037BF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Mission</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2C9746A-AF6E-360B-A0C6-848C152DDD53</referredTableID>
+<keyObject>1BF14691-718F-B112-6A75-210181F077A7</keyObject>
+<referredKeyID>1BF14691-718F-B112-6A75-210181F077A7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>mis_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

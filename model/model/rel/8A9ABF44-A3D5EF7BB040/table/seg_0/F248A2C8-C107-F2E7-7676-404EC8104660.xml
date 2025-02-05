@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F248A2C8-C107-F2E7-7676-404EC8104660" name="Barracks">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>971A52D3-383A-43C7-A7E2-21CF56100EDC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="b_id" id="251EC81F-B32E-429F-31B9-A23BAFAF3045">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>BE38933F-5294-D34A-7925-4F5D76E5961C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E1589E6-21C4-DC91-C3D1-F955D6CDC40F" referredColumn="7A06C276-D1BE-E3AD-B983-6784BA9F5AF6"/>
+</associations>
+</Column>
+<Column name="bb_id" id="62E1498D-9307-D254-220D-3F3BC9AC32EC">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>6E9233DE-8C05-5019-8782-DF9239FDE689</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F52C3E2-6F6B-3897-BEA5-491D99EB124D" name="Barracks_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>E10D961A-7801-D651-6BD2-6CDBF48AE7C9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="251EC81F-B32E-429F-31B9-A23BAFAF3045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D9F08BB-3083-5197-91FD-7F01886AE229" name="Barracks_PKv1">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>AF3F4E90-8531-C925-AFA3-C13E6BE2DE94</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62E1498D-9307-D254-220D-3F3BC9AC32EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8E3D1F9-11B1-E495-A37D-C587F0815F8B" name="Barracks_Base_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>1C0C1D97-99E9-00E7-050A-E0F03FA16368</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="251EC81F-B32E-429F-31B9-A23BAFAF3045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3284B011-0C68-70DA-3995-74D318142573" name="specializing">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Specialty_s_id" id="802FE790-5A56-3E67-9AFF-A9877BBAC68B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8E5B5D4-C1B0-0FFF-E9D8-E10669F75EF9" referredColumn="1F56D2AC-EA9A-0674-6F9C-1EB4A9339AE0"/>
+</associations>
+</Column>
+<Column name="Soldier_s_id" id="191DC1E7-843E-3036-7502-84F4532E94C5">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06E702FA-41DB-376D-FD35-8956CC0E0957" referredColumn="ABF57574-51BC-ECF8-D48D-B2AB8338A6E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BB784CC-95D7-C2E7-12B0-555A7A9D0262" name="specializing_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802FE790-5A56-3E67-9AFF-A9877BBAC68B"/>
+<colUsage columnID="191DC1E7-843E-3036-7502-84F4532E94C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF63BEC4-190E-F722-CF1C-61456ADD4917" name="specializing_Specialty_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>E46FC082-F560-D47D-ACB2-610B37F20D16</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802FE790-5A56-3E67-9AFF-A9877BBAC68B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="733940E3-F931-9F2F-F557-5DE871309CBC" name="specializing_Soldier_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>E46FC082-F560-D47D-ACB2-610B37F20D16</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="191DC1E7-843E-3036-7502-84F4532E94C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

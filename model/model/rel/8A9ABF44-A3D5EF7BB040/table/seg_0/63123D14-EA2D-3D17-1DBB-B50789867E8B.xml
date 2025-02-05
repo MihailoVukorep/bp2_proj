@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63123D14-EA2D-3D17-1DBB-B50789867E8B" name="Soldier">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>77963DFE-BC68-33A6-0391-4DA9FC6A03E7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="s_id" id="ABF57574-51BC-ECF8-D48D-B2AB8338A6E4">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="F04E322C-8149-E1CE-B781-E02D687F0266">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>047720F0-FF1A-1030-7572-A1FF2DBA00DA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="7FA0D54B-842B-810A-45D4-1CC369F7E14F">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>E03B6D78-A557-97EB-FF38-907605BEBCA0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_joining" id="0E62752F-398C-DE6F-BFB9-4532AF1629AE">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>A50DC7F6-5578-3F6F-3957-CC0643870F01</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rank_r_id" id="6D128C21-B293-BA15-5E10-613D37E7D46A">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>F4F07520-6C45-6215-7C8D-51A688133E12</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="225C15BF-481E-7468-129A-46B5BE0538D9" referredColumn="2BF095BA-C5C7-D72C-464A-7D2591B9B10D"/>
+</associations>
+</Column>
+<Column name="Soldier_s_id" id="CA4E92E1-05E0-9C62-6DBC-E392449C509F">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>3DEFE2B0-3D5A-4E82-1E17-C9959D45BCE7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B0E0F02-60AF-DB0C-B48B-8EB41D8B2DD5" referredColumn="ABF57574-51BC-ECF8-D48D-B2AB8338A6E4"/>
+</associations>
+</Column>
+<Column name="Vehicle_v_id" id="AF0F1B84-07F9-689C-FAE2-34D747A65C9A">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>6ED7A98C-678A-A0F5-255D-6C075AC08A30</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07824251-2643-0BCC-5B97-F18AC9D67263" referredColumn="417CFD52-01E8-1F67-CB9A-02BFE275064E"/>
+</associations>
+</Column>
+<Column name="Barracks_bb_id" id="A21138DD-A1F4-53D4-2798-D0CA308C95B7">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>0BD256F7-E6F6-9C79-A4D7-6138A6F51C1C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1DCF9AE-C703-67C5-2A93-DFC42B94CD3F" referredColumn="62E1498D-9307-D254-220D-3F3BC9AC32EC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="664D8C0B-9F14-B00F-5E4D-B7F7AABC2CBA" name="Soldier_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>1713ADC4-0501-94CA-8900-C26F195BC88C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABF57574-51BC-ECF8-D48D-B2AB8338A6E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2102F5F5-8328-FB13-4BC6-1632B0BA6144" name="Soldier__IDX">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5E8F24BB-8407-0E80-8FDE-458BF30047AC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AF0F1B84-07F9-689C-FAE2-34D747A65C9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66BE31AB-E982-6C0B-B761-A34B0829E18A" name="Soldier_Soldier_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>72A5F94C-BB6A-3AEE-FDA8-7AD4DB0FA9C5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA4E92E1-05E0-9C62-6DBC-E392449C509F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF13D079-621E-A0AB-A926-7FEDA8B958C1" name="Soldier_Vehicle_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>5E8F24BB-8407-0E80-8FDE-458BF30047AC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF0F1B84-07F9-689C-FAE2-34D747A65C9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C99D0B6D-0EFA-7DAB-54DA-B33101777BE1" name="Soldier_Rank_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>BA440AAC-8D32-010D-84DF-BB53849D7D50</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D128C21-B293-BA15-5E10-613D37E7D46A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34A787F0-ECAE-7606-32D8-2937F885A168" name="Soldier_Barracks_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>678CAB9F-848C-402F-E256-44430712A3E7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A21138DD-A1F4-53D4-2798-D0CA308C95B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

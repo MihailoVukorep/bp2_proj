@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E68B6DCC-6A47-1BB0-17D2-6613A59EC146" name="Medal">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>FC3A8809-7701-AF88-B94D-091045D4BEE8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Participation_p_id" id="8A2F91EC-CB4B-0433-BD64-07E76A59B841">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>DC2C7370-33F8-4343-7817-3622B00C786D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C47AB12-3407-BFC5-B12D-7087F353D100" referredColumn="16BA082B-07DB-E723-5FD4-B5CDB0C1286A"/>
+</associations>
+</Column>
+<Column name="Medal_Type_mt_id" id="21DC18D3-C5D7-5B09-340B-33C74F663430">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>92761F91-6E71-2217-8FF2-25035BD99323</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EE77E91-CEFF-22FB-70D5-042791B2958B" referredColumn="01C70C3E-87FD-A5A1-FA8B-436FC1D87D82"/>
+</associations>
+</Column>
+<Column name="award_date" id="D87B9AC6-5D04-26D7-7BC9-029C226BCDE8">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>B3FD0549-38BC-4FB9-678A-E45EC9B8E504</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="BA7EC222-6A4A-9C45-45F4-A9056E6D1A53">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>31A45D6E-FBB2-DAD4-BB46-4BF7FC829DD2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A45F7620-5EDF-42C1-BD8E-C66C11A5A9C2" name="Medal_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>7F53515B-F8DB-68BD-7C37-0063DD5741FD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21DC18D3-C5D7-5B09-340B-33C74F663430"/>
+<colUsage columnID="8A2F91EC-CB4B-0433-BD64-07E76A59B841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3642EB47-FD1B-E6CC-6F91-D03FAA90A919" name="Medal__IDX">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>68A765F8-4F54-82DA-8EC7-DF4943FCDCD2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8A2F91EC-CB4B-0433-BD64-07E76A59B841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF860190-4DE2-E849-E3C2-B9AA08603ED1" name="Medal_Participation_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>68A765F8-4F54-82DA-8EC7-DF4943FCDCD2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2F91EC-CB4B-0433-BD64-07E76A59B841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B964FB4-1773-DB52-64A2-B486FA7563C2" name="Medal_Medal_Type_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>F4B774EA-EAF6-913D-D60E-701B743E558A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21DC18D3-C5D7-5B09-340B-33C74F663430"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77963DFE-BC68-33A6-0391-4DA9FC6A03E7" name="Soldier">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F37D02A-4FCD-5B12-27D6-0F42FC5B87C1" name="Mission">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 14:40:44 UTC</createdTime>
+<createdTime>2025-02-05 02:53:15 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="s_id" id="6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0">
+<Attribute name="mis_id" id="72A27DF2-D810-EE8D-444A-C1F4D747E3E9">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 14:41:55 UTC</createdTime>
+<createdTime>2025-02-05 02:53:22 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
@@ -27,9 +27,23 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="first_name" id="047720F0-FF1A-1030-7572-A1FF2DBA00DA">
+<Attribute name="name" id="80D020C3-8E0F-5F2C-8467-A6F7EE9EDBAE">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 14:42:30 UTC</createdTime>
+<createdTime>2025-02-05 02:53:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="4689FD31-20C4-6110-5F34-1E9380882EAE">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:53:37 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
@@ -41,23 +55,9 @@
 <dataTypeSize>256</dataTypeSize>
 <ownDataTypeParameters>256,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="last_name" id="E03B6D78-A557-97EB-FF38-907605BEBCA0">
+<Attribute name="start_date" id="81C095A2-0750-19BC-B403-864019AB5785">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 14:43:08 UTC</createdTime>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="date_of_joining" id="A50DC7F6-5578-3F6F-3957-CC0643870F01">
-<createdBy>user</createdBy>
-<createdTime>2025-01-30 14:43:16 UTC</createdTime>
+<createdTime>2025-02-05 02:53:59 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
@@ -68,60 +68,41 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="r_id" id="F4F07520-6C45-6215-7C8D-51A688133E12">
+<Attribute name="end_date" id="C03C9D02-A396-7D77-9D9D-234B5EE1AC41">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 15:16:23 UTC</createdTime>
-<generatorID>BA440AAC-8D32-010D-84DF-BB53849D7D50</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
-</engineerTo>
-<referedAttribute>6A49230D-2A81-23BA-A3AA-28D3531B0A2A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="chief_id" id="3DEFE2B0-3D5A-4E82-1E17-C9959D45BCE7">
-<createdBy>user</createdBy>
-<createdTime>2025-02-05 02:21:12 UTC</createdTime>
-<generatorID>72A5F94C-BB6A-3AEE-FDA8-7AD4DB0FA9C5</generatorID>
+<createdTime>2025-02-05 02:54:11 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="v_id" id="6ED7A98C-678A-A0F5-255D-6C075AC08A30">
+<Attribute name="status" id="AC31FC42-478B-C2CD-7477-3C326AA41C8F">
 <createdBy>user</createdBy>
-<createdTime>2025-02-05 02:37:02 UTC</createdTime>
-<generatorID>5E8F24BB-8407-0E80-8FDE-458BF30047AC</generatorID>
+<createdTime>2025-02-05 02:54:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>4386F602-FC39-09D1-1589-41C7664BBD70</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bb_id" id="0BD256F7-E6F6-9C79-A4D7-6138A6F51C1C">
+<Attribute name="l_id" id="C5332E2A-2E03-A54D-1485-5D96454A5BDD">
 <createdBy>user</createdBy>
-<createdTime>2025-02-05 02:41:10 UTC</createdTime>
-<generatorID>678CAB9F-848C-402F-E256-44430712A3E7</generatorID>
+<createdTime>2025-02-05 02:55:25 UTC</createdTime>
+<generatorID>92B424CE-392C-EEBC-22EA-FFBD209C5812</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>6E9233DE-8C05-5019-8782-DF9239FDE689</referedAttribute>
+<referedAttribute>8FD9C7FA-3441-699C-1C35-16DD5383259B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -129,16 +110,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1713ADC4-0501-94CA-8900-C26F195BC88C" name="Military Member PK">
+<identifier id="135226B9-AF44-EAD3-F537-5807279C3D91" name="Mission PK">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 14:43:54 UTC</createdTime>
+<createdTime>2025-02-05 02:55:11 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
 <item key="FF199421-A32C-CF92-7A84-D2BABF55911F" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</attributeRef>
+<attributeRef>72A27DF2-D810-EE8D-444A-C1F4D747E3E9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

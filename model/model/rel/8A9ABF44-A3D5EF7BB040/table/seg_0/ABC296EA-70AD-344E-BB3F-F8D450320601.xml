@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABC296EA-70AD-344E-BB3F-F8D450320601" name="Equipment">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>409E30F0-0602-E452-D7C9-85A83B8C315C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="e_id" id="EFBC170B-6AD8-3E85-00BD-388FB613762B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>B0B9ED5C-24C4-0363-2D01-478F78A75741</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="EFF6357F-FF87-1E3F-7FAC-681D6E88AD64">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>62F3E0C4-4314-8795-4CDC-FE1D3025EA17</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Equipment_Type_et_id" id="AF8B093B-9AE7-4B02-8F75-6794051EF7A5">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>78486CBE-3A99-CA7A-52AC-CB889B31B1B8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4229BC8F-92F6-2440-828F-8FF2E72142B1" referredColumn="84F187F4-A27E-0058-A23D-214A9AE7FC3B"/>
+</associations>
+</Column>
+<Column name="Soldier_s_id" id="8CE9EA78-F8D7-D786-3845-7E9745355132">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>44B2AF1A-F810-1F28-572F-526A79EF516B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E69538FB-7004-0ED9-4BC6-C27F1AE94281" referredColumn="ABF57574-51BC-ECF8-D48D-B2AB8338A6E4"/>
+</associations>
+</Column>
+<Column name="Storage_bs_id" id="7C0ADDCC-86C4-EC7B-C36C-5539130D5C78">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>53C8E723-84EF-5DE6-18DC-EE501BFC9651</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2CEC1D8-DF25-DFF5-4B82-92F83B60B404" referredColumn="8F7B9725-1C48-B88F-F632-3FC648BCC167"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59DEB392-549C-BFD9-7C13-D6D796A5966B" name="Equipment_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>163A2275-4A12-A525-658B-0640142FFAA3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFBC170B-6AD8-3E85-00BD-388FB613762B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80DFAB88-056F-F387-B90E-E0515A862AC9" name="Equipment_Equipment_Type_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>9AABF245-274E-5E79-1493-68DB78A5441F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF8B093B-9AE7-4B02-8F75-6794051EF7A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6D810F1-4EB8-5144-2FCC-0C531DEB3891" name="Equipment_Soldier_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>FDBCB6E2-0D69-20D5-8FBD-B5A9F9DC616F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CE9EA78-F8D7-D786-3845-7E9745355132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C358A2A-BC36-A903-3B33-0DE598DA5C81" name="Equipment_Storage_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 02:56:44 UTC</createdTime>
+<generatorID>1AD711CD-7298-A314-BC93-EFD9DDB1001D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C0ADDCC-86C4-EC7B-C36C-5539130D5C78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
