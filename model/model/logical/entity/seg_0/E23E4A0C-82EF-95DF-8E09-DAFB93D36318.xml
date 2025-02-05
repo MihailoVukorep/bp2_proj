@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E23E4A0C-82EF-95DF-8E09-DAFB93D36318" name="Military Base">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E23E4A0C-82EF-95DF-8E09-DAFB93D36318" name="Base">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:47:50 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -17,12 +17,12 @@
 <generateDiscrimColumn>true</generateDiscrimColumn>
 <discriminatorColumnName>type</discriminatorColumnName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="base_id" id="BE38933F-5294-D34A-7925-4F5D76E5961C">
+<Attribute name="b_id" id="BE38933F-5294-D34A-7925-4F5D76E5961C">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:48:09 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,22 +34,22 @@
 <createdTime>2025-01-30 14:48:14 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="location_id" id="04B28C34-9602-44BB-24DB-61FACBA359AD">
+<Attribute name="l_id" id="04B28C34-9602-44BB-24DB-61FACBA359AD">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 15:35:04 UTC</createdTime>
 <generatorID>564CE606-1C3E-5F5B-8990-4CF9D43BFEB2</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <referedAttribute>8FD9C7FA-3441-699C-1C35-16DD5383259B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,9 +63,8 @@
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:48:25 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

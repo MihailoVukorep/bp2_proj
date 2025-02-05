@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="equipment_type_id" id="223B9541-B654-EBC6-BB66-DCDB3FA5A813">
+<Attribute name="et_id" id="223B9541-B654-EBC6-BB66-DCDB3FA5A813">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:50:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

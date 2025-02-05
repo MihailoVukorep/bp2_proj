@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D2C71E8-100E-AE5F-6702-CDBC2849B331" name="Storage">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>762E640C-2F75-30F8-010C-39A1D93E4089</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="b_id" id="E86FEBA8-F74E-D15C-0DF0-B94FE4C2E91B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>BE38933F-5294-D34A-7925-4F5D76E5961C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B202640-D070-47B4-6F4E-3BC859A54835" referredColumn="6FA31220-011B-99CD-F9ED-0BFAA61280C0"/>
+</associations>
+</Column>
+<Column name="bs_id" id="E9F130A7-9538-7464-2D0D-BC685F6D77D8">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>5F92FAD8-19D3-8087-A83B-D916B266B2C3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01A28444-D20E-EA68-CB86-45E0B0806BFC" name="Storage_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>E10D961A-7801-D651-6BD2-6CDBF48AE7C9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E86FEBA8-F74E-D15C-0DF0-B94FE4C2E91B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C12A81C6-40A1-AA24-23A7-08024BECB92F" name="Storage_PKv1">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>2AE3CBD3-6FAB-5F4F-7161-F3A1473238CE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9F130A7-9538-7464-2D0D-BC685F6D77D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C29E55E1-7E1C-FC42-3A19-F97DCC3F1CA8" name="Storage_Base_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>2410B070-2535-E5E0-7220-D53FE80FD11C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E86FEBA8-F74E-D15C-0DF0-B94FE4C2E91B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

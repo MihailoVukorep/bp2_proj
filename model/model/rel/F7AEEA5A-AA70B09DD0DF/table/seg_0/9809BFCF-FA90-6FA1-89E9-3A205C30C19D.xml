@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9809BFCF-FA90-6FA1-89E9-3A205C30C19D" name="specializing">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Specialty_s_id" id="7D21EBBB-B5EE-45C9-D955-07A745109485">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="001AA6F9-6A70-B199-CE46-90BE3418CB95" referredColumn="1702B519-CF46-D6E6-A005-DE6E9AF057D1"/>
+</associations>
+</Column>
+<Column name="Soldier_s_id" id="B3C061AA-52CE-A309-FD1A-DADAE2CF20BF">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="777726EA-7C64-C242-BCF6-C42E330A7F99" referredColumn="00FAA7BE-03CE-7D8C-092B-4D4010ECBFF9"/>
+</associations>
+</Column>
+<Column name="Soldier_Barracks_bb_id" id="A1595213-8786-C183-F180-9C321AD1D385">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="777726EA-7C64-C242-BCF6-C42E330A7F99" referredColumn="810DA520-C105-4D60-D2C6-B8331784DA3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92E82BF2-B83D-38B2-03E0-1FA65A03E611" name="specializing_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D21EBBB-B5EE-45C9-D955-07A745109485"/>
+<colUsage columnID="B3C061AA-52CE-A309-FD1A-DADAE2CF20BF"/>
+<colUsage columnID="A1595213-8786-C183-F180-9C321AD1D385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="533A44F8-57D2-D448-990C-588A0533F98B" name="specializing_Specialty_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>E46FC082-F560-D47D-ACB2-610B37F20D16</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D21EBBB-B5EE-45C9-D955-07A745109485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37D5E3AB-2A32-160B-756A-7FA9940AB788" name="specializing_Soldier_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>E46FC082-F560-D47D-ACB2-610B37F20D16</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3C061AA-52CE-A309-FD1A-DADAE2CF20BF"/>
+<colUsage columnID="A1595213-8786-C183-F180-9C321AD1D385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC3A8809-7701-AF88-B94D-091045D4BEE8" name="Service Medal">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC3A8809-7701-AF88-B94D-091045D4BEE8" name="Medal">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:52:43 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="mission_participation_id" id="BEE3FF81-E009-6728-4D4F-99989E198A39">
+<Attribute name="sm_id" id="BEE3FF81-E009-6728-4D4F-99989E198A39">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:52:50 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2025-01-30 14:52:58 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -45,7 +45,7 @@
 <createdTime>2025-01-30 14:53:02 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,19 +54,75 @@
 <dataTypeSize>256</dataTypeSize>
 <ownDataTypeParameters>256,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="smt_id" id="92761F91-6E71-2217-8FF2-25035BD99323">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:17:57 UTC</createdTime>
+<generatorID>F4B774EA-EAF6-913D-D60E-701B743E558A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>DF4F42F0-8B78-48E2-8CDB-6ADB98001558</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="p_id" id="FA62215E-2E72-CA5B-939B-30400FDE2F7B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:19:33 UTC</createdTime>
+<generatorID>33222633-E603-0424-05E1-B7057349050F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>A6F63F0D-73F3-7A6F-D0FA-179D902973ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="s_id" id="204B0A6E-9A1F-E741-6A7B-C4B7DD4C8D2B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:22:46 UTC</createdTime>
+<generatorID>33222633-E603-0424-05E1-B7057349050F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>2AABB26D-BD98-BFF4-EA0C-185BC3FA4EA9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bb_id" id="DB3DE1E2-1D07-3A00-4AB3-10297848BF19">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:44 UTC</createdTime>
+<generatorID>33222633-E603-0424-05E1-B7057349050F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>5D4B1352-5B6C-FA02-2DC4-4C0F5B32D163</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7F53515B-F8DB-68BD-7C37-0063DD5741FD" name="Service Medal PK">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:53:07 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BEE3FF81-E009-6728-4D4F-99989E198A39</attributeRef>
+<attributeRef>92761F91-6E71-2217-8FF2-25035BD99323</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

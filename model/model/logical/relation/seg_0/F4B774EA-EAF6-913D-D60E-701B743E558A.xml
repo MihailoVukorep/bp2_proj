@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="is medal type" directorySegmentName="seg_0" id="F4B774EA-EAF6-913D-D60E-701B743E558A">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:17:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+</engineerTo>
+<sourcePk>52A76EF0-DDF5-88AF-B6C4-CC31049E4E2D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CB81F44B-3BA0-4053-ECAD-03DB95CEBA23</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC3A8809-7701-AF88-B94D-091045D4BEE8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

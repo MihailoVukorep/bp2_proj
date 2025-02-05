@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BB6C16A-A6A3-AD80-F9BD-238B820EE348" name="Equipment">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>409E30F0-0602-E452-D7C9-85A83B8C315C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="e_id" id="EAF3989D-D109-5001-EBAE-02F91813DC0A">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>B0B9ED5C-24C4-0363-2D01-478F78A75741</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="DF7F8067-4AD3-652A-42FC-61EF16A209F0">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>62F3E0C4-4314-8795-4CDC-FE1D3025EA17</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Equipment_Type_et_id" id="1F18A97E-F018-A2FA-3079-A70E64089C1D">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>78486CBE-3A99-CA7A-52AC-CB889B31B1B8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83B4F0AC-7455-CF70-6E2B-C751508CD66C" referredColumn="5D05A5C3-3D6A-E5A0-9BF4-CBC6D294AAA8"/>
+</associations>
+</Column>
+<Column name="Storage_bs_id" id="84EA1E72-6F6A-D81A-DED5-8110500A3201">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>AA6BE204-0B72-09EA-8972-4DF9DC1082E8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AC45294-B63E-FC94-4A3F-C8845E400CDE" referredColumn="E9F130A7-9538-7464-2D0D-BC685F6D77D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="300656DC-4E9D-34DA-1F97-07882EEE1209" name="Equipment_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>163A2275-4A12-A525-658B-0640142FFAA3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAF3989D-D109-5001-EBAE-02F91813DC0A"/>
+<colUsage columnID="84EA1E72-6F6A-D81A-DED5-8110500A3201"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEB5B348-9BC9-C366-D97B-11995F7A91AE" name="Equipment_Equipment_Type_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>9AABF245-274E-5E79-1493-68DB78A5441F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F18A97E-F018-A2FA-3079-A70E64089C1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="605DD0E3-3C7F-2CF7-C1FD-53E5444736AB" name="Equipment_Storage_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:08:53 UTC</createdTime>
+<generatorID>98843ABE-BF2B-6F8C-9C03-7A21BC64D909</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84EA1E72-6F6A-D81A-DED5-8110500A3201"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

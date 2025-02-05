@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77963DFE-BC68-33A6-0391-4DA9FC6A03E7" name="Military Member">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77963DFE-BC68-33A6-0391-4DA9FC6A03E7" name="Soldier">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:40:44 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="soldier_id" id="6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0">
+<Attribute name="s_id" id="6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:41:55 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2025-01-30 14:42:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,7 +46,7 @@
 <createdTime>2025-01-30 14:43:08 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,7 +60,7 @@
 <createdTime>2025-01-30 14:43:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,13 +68,13 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rank_id" id="F4F07520-6C45-6215-7C8D-51A688133E12">
+<Attribute name="r_id" id="F4F07520-6C45-6215-7C8D-51A688133E12">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 15:16:23 UTC</createdTime>
 <generatorID>BA440AAC-8D32-010D-84DF-BB53849D7D50</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <referedAttribute>6A49230D-2A81-23BA-A3AA-28D3531B0A2A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -82,13 +82,28 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="equipment_id" id="0D40EF65-0859-B586-5782-27BE74CBDC31">
+<Attribute name="s_id1" id="3FF9B4DB-1C15-3958-2360-DE7DD7952B22">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 15:19:00 UTC</createdTime>
-<generatorID>03A924D7-A003-22B2-C880-4B81C59AC1E1</generatorID>
+<createdTime>2025-01-30 15:59:42 UTC</createdTime>
+<generatorID>BABA7AAC-00ED-D985-0F9B-119D6F50D878</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="e_id" id="C71BCE8B-955D-D288-6D7B-4828A18BB315">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:06:47 UTC</createdTime>
+<generatorID>07B94C88-CAC2-F9BD-FDAF-C8DB844B5328</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B0B9ED5C-24C4-0363-2D01-478F78A75741</referedAttribute>
@@ -97,13 +112,13 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="vehicle_id" id="C94F14CC-43C1-6216-825F-5B3182CE8879">
+<Attribute name="v_id" id="FC474796-9632-7C23-2CFD-B9D7D9196C91">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 15:19:12 UTC</createdTime>
-<generatorID>283E0653-5B72-FA3E-ECF6-85282D0F055E</generatorID>
+<createdTime>2025-02-05 00:07:09 UTC</createdTime>
+<generatorID>F363D0F7-EBE6-4500-C6A9-BDE5770E2783</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>4386F602-FC39-09D1-1589-41C7664BBD70</referedAttribute>
@@ -112,16 +127,58 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="soldier_id1" id="3FF9B4DB-1C15-3958-2360-DE7DD7952B22">
+<Attribute name="bs_id" id="888FA6EF-0E6A-8CB4-25F9-A32037BBB703">
 <createdBy>user</createdBy>
-<createdTime>2025-01-30 15:59:42 UTC</createdTime>
+<createdTime>2025-02-05 01:06:20 UTC</createdTime>
+<generatorID>F363D0F7-EBE6-4500-C6A9-BDE5770E2783</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>511061AF-7D82-1A80-CEB6-69C77D25E502</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bs_id1" id="6E334DCF-CABC-38DE-CBD0-8F2BA91F0B65">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:20 UTC</createdTime>
+<generatorID>07B94C88-CAC2-F9BD-FDAF-C8DB844B5328</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AA6BE204-0B72-09EA-8972-4DF9DC1082E8</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bb_id" id="E79CE122-4616-0C26-CDB1-EFE44E83CDDD">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:44 UTC</createdTime>
+<generatorID>36C642C2-9F30-00A2-8B72-BE90C5ED3ABD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>6E9233DE-8C05-5019-8782-DF9239FDE689</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bb_id1" id="FAE8210B-C812-074E-2A6E-74C1F8614BDB">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:44 UTC</createdTime>
 <generatorID>BABA7AAC-00ED-D985-0F9B-119D6F50D878</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</referedAttribute>
+<referedAttribute>E79CE122-4616-0C26-CDB1-EFE44E83CDDD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -133,13 +190,13 @@
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:43:54 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</attributeRef>
+<attributeRef>E79CE122-4616-0C26-CDB1-EFE44E83CDDD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

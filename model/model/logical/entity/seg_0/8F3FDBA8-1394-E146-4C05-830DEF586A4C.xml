@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="rank_id" id="6A49230D-2A81-23BA-A3AA-28D3531B0A2A">
+<Attribute name="r_id" id="6A49230D-2A81-23BA-A3AA-28D3531B0A2A">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:45:55 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="description" id="DAE4CA17-A67D-D70F-D924-E7DACC8BC2FC">
 <createdBy>user</createdBy>

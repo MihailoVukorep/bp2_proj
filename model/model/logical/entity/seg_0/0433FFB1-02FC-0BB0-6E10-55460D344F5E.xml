@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="specialty_id" id="7D36914B-4DF1-08B5-9746-6479EE5CDED7">
+<Attribute name="s_id" id="7D36914B-4DF1-08B5-9746-6479EE5CDED7">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:47:04 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="description" id="834F90FD-AF6C-45AB-C6C5-41FFF7D8BD08">
 <createdBy>user</createdBy>

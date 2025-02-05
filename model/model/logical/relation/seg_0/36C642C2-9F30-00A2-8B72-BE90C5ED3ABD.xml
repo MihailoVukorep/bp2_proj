@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sleeps" directorySegmentName="seg_0" id="36C642C2-9F30-00A2-8B72-BE90C5ED3ABD">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:04:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="EC0101A7-299D-0467-3552-53194993F130" value="true"/>
+</engineerTo>
+<sourcePk>AF3F4E90-8531-C925-AFA3-C13E6BE2DE94</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>971A52D3-383A-43C7-A7E2-21CF56100EDC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>77963DFE-BC68-33A6-0391-4DA9FC6A03E7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

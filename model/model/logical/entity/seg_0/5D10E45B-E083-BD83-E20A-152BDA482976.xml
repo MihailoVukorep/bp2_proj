@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="vehicle_type_id" id="572DC285-8FD7-5A07-0E9F-87669DD275CD">
+<Attribute name="vt_id" id="572DC285-8FD7-5A07-0E9F-87669DD275CD">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 14:51:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -52,8 +52,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

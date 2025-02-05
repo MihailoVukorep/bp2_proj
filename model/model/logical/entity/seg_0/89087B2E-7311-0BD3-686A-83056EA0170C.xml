@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89087B2E-7311-0BD3-686A-83056EA0170C" name="Participate">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89087B2E-7311-0BD3-686A-83056EA0170C" name="Participation">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 16:05:37 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="true"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,16 +14,104 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="p_id" id="A6F63F0D-73F3-7A6F-D0FA-179D902973ED">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:10:05 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="s_id1" id="2AABB26D-BD98-BFF4-EA0C-185BC3FA4EA9">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:22:46 UTC</createdTime>
+<generatorID>0A9F63C8-A2BD-1D48-DC22-A23702CD5E7E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>6FDC1EB2-2A09-80F0-4283-CE3E9DF915A0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mis_id" id="051AD13F-CEDC-BD77-7A1E-EF3B26C82E1F">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:24:53 UTC</createdTime>
+<generatorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>031AEF6E-52E8-81DA-E53E-05D2FE36F076</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="s_id" id="F15127BB-B3B2-01CD-C723-F95369B3FA4B">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 00:24:53 UTC</createdTime>
+<generatorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>9EFF5D72-D100-806E-62A8-9B4DB30D1639</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bb_id" id="873BA246-D1EE-265C-5DAD-66986F047748">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:44 UTC</createdTime>
+<generatorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>F0EFDD35-F6F6-EFE9-5861-C7875BA86FFB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bb_id1" id="5D4B1352-5B6C-FA02-2DC4-4C0F5B32D163">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:06:44 UTC</createdTime>
+<generatorID>0A9F63C8-A2BD-1D48-DC22-A23702CD5E7E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
+</engineerTo>
+<referedAttribute>E79CE122-4616-0C26-CDB1-EFE44E83CDDD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D67F90E4-9A67-C7BA-62EF-999709FBD096" name="Participate PK">
 <createdBy>user</createdBy>
 <createdTime>2025-01-30 16:07:43 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="13479F13-A1EF-567E-8C8E-FE2DBCFF5111" value="false"/>
+<item key="75A4E4A4-B03D-2EDA-EBF5-605BD0FBCE22" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>A6F63F0D-73F3-7A6F-D0FA-179D902973ED</attributeRef>
+<attributeRef>2AABB26D-BD98-BFF4-EA0C-185BC3FA4EA9</attributeRef>
+<attributeRef>5D4B1352-5B6C-FA02-2DC4-4C0F5B32D163</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>
