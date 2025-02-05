@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2B42177-6D76-BE10-C732-F53948049344" name="Rank">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>8F3FDBA8-1394-E146-4C05-830DEF586A4C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="r_id" id="CC410082-322D-8B9C-55C6-813A49A10231">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>6A49230D-2A81-23BA-A3AA-28D3531B0A2A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7BAEEF23-0944-4B35-4565-144DFEC7CBFE">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>75F2F4AE-FE17-CB56-0B8C-059150DD23AE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="A506CDDC-22BA-164F-595B-6632D8D6B7D8">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>DAE4CA17-A67D-D70F-D924-E7DACC8BC2FC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23D520F9-6FB9-FE6E-0026-BFC535FAA111" name="Rank_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>6F87B3DF-5BFD-CCF6-DA85-58BA5B0695CE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC410082-322D-8B9C-55C6-813A49A10231"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18B51B70-5C62-866D-C68C-9CF1CCDE8963" name="Participation">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>89087B2E-7311-0BD3-686A-83056EA0170C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="p_id" id="49FB503F-287D-F4E2-FCAB-3272E2BA9C02">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>A6F63F0D-73F3-7A6F-D0FA-179D902973ED</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Soldier_s_id" id="36EFE419-1BE9-AA06-1717-2D391F7B8A57">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>2AABB26D-BD98-BFF4-EA0C-185BC3FA4EA9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA9B6B4C-EFEA-8C0B-97B4-CD1CD737F26E" referredColumn="4C47B5F7-C54A-4B4C-7195-23E56DE945F6"/>
+</associations>
+</Column>
+<Column name="Mission_mis_id" id="26D70D1A-43BD-D0C8-0461-3E2840975A7A">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>051AD13F-CEDC-BD77-7A1E-EF3B26C82E1F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9794FCB9-F116-DFD6-6972-D39502D8BDC6" referredColumn="2CA6BC32-FF20-6A30-016A-32FBBFE9B0B3"/>
+</associations>
+</Column>
+<Column name="Mission_Soldier_s_id" id="0E513469-E5F5-252F-DE92-A244A7B587A6">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>F15127BB-B3B2-01CD-C723-F95369B3FA4B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9794FCB9-F116-DFD6-6972-D39502D8BDC6" referredColumn="699AA445-C9FE-21B7-9A99-9B82D62E1956"/>
+</associations>
+</Column>
+<Column name="Mission_Soldier_bb_id" id="08950050-C240-69DE-4756-8611A79D1B34">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>873BA246-D1EE-265C-5DAD-66986F047748</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9794FCB9-F116-DFD6-6972-D39502D8BDC6" referredColumn="A8B25C3C-DF96-44C2-DE45-B445368F8841"/>
+</associations>
+</Column>
+<Column name="Soldier_bb_id" id="07516527-F7EB-0C59-1AAB-9C6F08A301BC">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>5D4B1352-5B6C-FA02-2DC4-4C0F5B32D163</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA9B6B4C-EFEA-8C0B-97B4-CD1CD737F26E" referredColumn="C57C347D-9E63-86FB-EE25-39BE7E2AE65A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA5F7F09-F62F-166F-85EC-71E561FA3B1B" name="Participation_PK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>D67F90E4-9A67-C7BA-62EF-999709FBD096</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49FB503F-287D-F4E2-FCAB-3272E2BA9C02"/>
+<colUsage columnID="36EFE419-1BE9-AA06-1717-2D391F7B8A57"/>
+<colUsage columnID="07516527-F7EB-0C59-1AAB-9C6F08A301BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8195ECF4-A33C-0A50-B7DE-7FD7C1BBA691" name="Participation__IDX">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="26D70D1A-43BD-D0C8-0461-3E2840975A7A"/>
+<colUsage columnID="0E513469-E5F5-252F-DE92-A244A7B587A6"/>
+<colUsage columnID="08950050-C240-69DE-4756-8611A79D1B34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E97578B-5673-5A00-7009-27F716F2960F" name="Participation_Soldier_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>0A9F63C8-A2BD-1D48-DC22-A23702CD5E7E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36EFE419-1BE9-AA06-1717-2D391F7B8A57"/>
+<colUsage columnID="07516527-F7EB-0C59-1AAB-9C6F08A301BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47948860-39E8-9785-02AD-B7A651844A3F" name="Participation_Mission_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26D70D1A-43BD-D0C8-0461-3E2840975A7A"/>
+<colUsage columnID="0E513469-E5F5-252F-DE92-A244A7B587A6"/>
+<colUsage columnID="08950050-C240-69DE-4756-8611A79D1B34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

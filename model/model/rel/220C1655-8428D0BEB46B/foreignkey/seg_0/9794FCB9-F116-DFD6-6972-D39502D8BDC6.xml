@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9794FCB9-F116-DFD6-6972-D39502D8BDC6" containerWithKeyObject="18B51B70-5C62-866D-C68C-9CF1CCDE8963" localFKIndex="47948860-39E8-9785-02AD-B7A651844A3F" name="Participation_Mission_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>3EA9DAF1-5B75-29AA-AA71-2F5D1A39A08B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Mission</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BE868A52-A7B9-9FB7-30CF-BAF04333280C</referredTableID>
+<keyObject>220B0C41-DFBB-9750-744C-384963C3E678</keyObject>
+<referredKeyID>220B0C41-DFBB-9750-744C-384963C3E678</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>mis_id,Soldier_s_id,Soldier_bb_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

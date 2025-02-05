@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A24EDC69-198C-65CF-F88A-8336DBEB7A39" containerWithKeyObject="B02ED570-1758-F400-7E94-48963E7C5A1E" localFKIndex="008CCB15-422B-4E3D-269E-655A3E142507" name="Barracks_Base_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>1C0C1D97-99E9-00E7-050A-E0F03FA16368</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Base</referredTableLongName>
+<arc>6473CDD3-6519-4B38-47AD-DB3E57471EF0</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8CCE5BCD-1964-F5A4-20D7-47BA3058FA09</referredTableID>
+<keyObject>8AA24C16-3179-DA30-0FA3-FFD445CD1EC8</keyObject>
+<referredKeyID>8AA24C16-3179-DA30-0FA3-FFD445CD1EC8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>b_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Barracks</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

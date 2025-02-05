@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B236749C-F4CD-177B-64A4-C2374599B954" containerWithKeyObject="6281665A-8C66-4107-8994-D2D244EB54BD" localFKIndex="3F76270B-927C-1C9B-EE50-A8FA263896AC" name="Soldier_Equipment_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>07B94C88-CAC2-F9BD-FDAF-C8DB844B5328</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Equipment</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99E09D55-A961-E64B-8C9B-60C40562D8ED</referredTableID>
+<keyObject>43DF229B-914D-2681-DF41-DEEA1973D9BE</keyObject>
+<referredKeyID>43DF229B-914D-2681-DF41-DEEA1973D9BE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>e_id,Storage_bs_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

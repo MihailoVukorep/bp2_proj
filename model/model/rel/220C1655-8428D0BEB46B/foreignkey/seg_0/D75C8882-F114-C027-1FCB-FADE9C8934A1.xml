@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D75C8882-F114-C027-1FCB-FADE9C8934A1" containerWithKeyObject="3CE6C839-1608-3EC0-0C8C-9DD34FDA0852" localFKIndex="720346DD-C293-7B0A-C2CA-99FB13970439" name="Storage_Base_FK">
+<createdBy>user</createdBy>
+<createdTime>2025-02-05 01:21:01 UTC</createdTime>
+<generatorID>2410B070-2535-E5E0-7220-D53FE80FD11C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Base</referredTableLongName>
+<arc>6473CDD3-6519-4B38-47AD-DB3E57471EF0</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8CCE5BCD-1964-F5A4-20D7-47BA3058FA09</referredTableID>
+<keyObject>8AA24C16-3179-DA30-0FA3-FFD445CD1EC8</keyObject>
+<referredKeyID>8AA24C16-3179-DA30-0FA3-FFD445CD1EC8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>b_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Storage</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
