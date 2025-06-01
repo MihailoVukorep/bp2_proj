@@ -14,26 +14,21 @@ public class UIH_Soldier {
         String answer;
         do {
             System.out.println("\nChoose option:");
-            System.out.println("1 - print all");
-            System.out.println("2 - Prikaz po identifikatoru");
+            System.out.println("1 - Print All");
+            System.out.println("2 - Show by ID");
+            System.out.println("3 - Insert New");
+            System.out.println("4 - Delete by ID");
+            System.out.println("0 - Exit");
+            System.out.print("> ");
 
             answer = MainUIHandler.sc.nextLine();
 
             switch (answer) {
-                case "1":
-                    showAll();
-                    break;
-                case "2":
-                    showById();
-                    break;
-                case "3":
-                    break;
-                case "4":
-                    break;
-                case "5":
-                    break;
-                case "6":
-                    break;
+                case "0": return;
+                case "1": showAll(); break;
+                case "2": showById(); break;
+                case "3": InsertNew(); break;
+                case "4": DeleteById(); break;
             }
 
         } while (!answer.equalsIgnoreCase("X"));
@@ -52,12 +47,41 @@ public class UIH_Soldier {
     }
 
     private void showById() {
-        System.out.println("ID: ");
+        System.out.print("ID: ");
         int id_sc = Integer.parseInt(MainUIHandler.sc.nextLine());
         try {
             Soldier soldier = soldierService.getById(id_sc);
-            //System.out.println(soldier.getFormattedHeader());
+            System.out.println(soldier.getFormattedHeader());
             System.out.println(soldier);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void InsertNew()
+    {
+        System.out.print("first name: ");
+        String firstName = MainUIHandler.sc.nextLine().strip();
+        System.out.print("last name.: ");
+        String lastName = MainUIHandler.sc.nextLine().strip();
+
+        Soldier soldier = new Soldier()
+
+        try {
+            soldierService.save(soldier);
+            System.out.println(soldier.getFormattedHeader());
+            System.out.println(soldier);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void DeleteById() {
+        System.out.print("ID: ");
+        int id_sc = Integer.parseInt(MainUIHandler.sc.nextLine());
+        try {
+            soldierService.deleteById(id_sc);
         } catch (SQLException e) {
             e.printStackTrace();
         }

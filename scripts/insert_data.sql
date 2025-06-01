@@ -99,7 +99,6 @@ INSERT INTO "LOCATION" (ID, COUNTRY, CITY) VALUES ('97', 'Kuwait', 'Kuwait City'
 INSERT INTO "LOCATION" (ID, COUNTRY, CITY) VALUES ('98', 'Bahrain', 'Manama');
 INSERT INTO "LOCATION" (ID, COUNTRY, CITY) VALUES ('99', 'Oman', 'Muscat');
 INSERT INTO "LOCATION" (ID, COUNTRY, CITY) VALUES ('100', 'Egypt', 'Sharm El Sheikh');
-commit;
 
 -- # RANK
 -- Enlisted
@@ -126,4 +125,60 @@ INSERT INTO "RANK" (ID, NAME, DESCRIPTION) VALUES (18, 'Major General', 'Command
 INSERT INTO "RANK" (ID, NAME, DESCRIPTION) VALUES (19, 'Lieutenant General', 'Commands a corps');
 INSERT INTO "RANK" (ID, NAME, DESCRIPTION) VALUES (20, 'General', 'Highest peacetime rank, commands major commands');
 
---
+-- Base
+INSERT INTO Base (id, name, location_id, type) VALUES (1, 'Alpha Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (2, 'Delta Storage', 1, '2');
+
+-- Equipment_Type
+INSERT INTO Equipment_Type (id, type) VALUES (1, 'Rifle');
+INSERT INTO Equipment_Type (id, type) VALUES (2, 'Helmet');
+
+-- Vehicle_Type
+INSERT INTO Vehicle_Type (id, model_name, name) 
+VALUES (1, 'HMMWV', 'Humvee');
+
+-- Soldier
+INSERT INTO Soldier (id, first_name, last_name, date_of_joining, rank_id, chief_id, vehicle_id, barracks_id)
+VALUES (1, 'John', 'Doe', DATE '2022-01-10', 1, 1, NULL, 1);
+
+INSERT INTO Soldier (id, first_name, last_name, date_of_joining, rank_id, chief_id, vehicle_id, barracks_id)
+VALUES (2, 'Jane', 'Smith', DATE '2023-03-15', 1, 1, NULL, 1);
+
+-- Vehicle
+INSERT INTO Vehicle (id, vehicle_type_id, storage_id, soldier_id)
+VALUES (1, 1, 2, 1);
+
+-- Specialty
+INSERT INTO Specialty (id, name, description)
+VALUES (1, 'Sniper', 'Long range engagement');
+INSERT INTO Specialty (id, name, description)
+VALUES (2, 'Medic', 'Combat medical support');
+
+-- Specializing
+INSERT INTO Specializing (specialty_id, soldier_id) VALUES (1, 1);
+INSERT INTO Specializing (specialty_id, soldier_id) VALUES (2, 2);
+
+-- Equipment
+INSERT INTO Equipment (id, status, equipment_type_id, soldier_id, storage_id) VALUES (1, 1, 1, 1, 2);
+INSERT INTO Equipment (id, status, equipment_type_id, soldier_id, storage_id) VALUES (2, 0, 2, NULL, 2);
+
+-- Medal_Type
+INSERT INTO Medal_Type (id, name) VALUES (1, 'Bravery');
+INSERT INTO Medal_Type (id, name) VALUES (2, 'Service');
+
+-- Mission
+INSERT INTO Mission (id, name, description, start_date, end_date, status, location_id)
+VALUES (1, 'Rescue Op', 'Rescue hostages in Zone X', DATE '2025-01-01', DATE '2025-01-10', 1, 1);
+
+-- Participation
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (1, 1, 1);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (2, 2, 1);
+
+-- Medal
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description)
+VALUES (1, 1, DATE '2025-01-15', 1, 'Exceptional courage in battle');
+
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description)
+VALUES (2, 2, DATE '2025-01-20', 2, 'Consistent service under pressure');
+
+commit;
