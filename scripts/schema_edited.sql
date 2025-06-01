@@ -115,7 +115,7 @@ CREATE TABLE Soldier
 		last_name       VARCHAR2 (256) , 
 		date_of_joining DATE , 
 		rank_id         NUMBER  NOT NULL , 
-		chief_id        NUMBER  NOT NULL , 
+		chief_id        NUMBER , 
 		vehicle_id      NUMBER , 
 		barracks_id     NUMBER 
     ) 
@@ -161,8 +161,10 @@ CREATE TABLE Vehicle_Type
 		name       VARCHAR2 (30) 
     ) 
 ;
-
 ALTER TABLE Vehicle_Type  ADD CONSTRAINT Vehicle_Type_PK PRIMARY KEY ( id );
+
+
+-- FK
 ALTER TABLE Base ADD CONSTRAINT Base_Location_FK FOREIGN KEY ( location_id ) REFERENCES Location ( id );
 ALTER TABLE Equipment ADD CONSTRAINT Equipment_Equipment_Type_FK FOREIGN KEY ( equipment_type_id ) REFERENCES Equipment_Type ( id );
 ALTER TABLE Equipment ADD CONSTRAINT Equipment_Soldier_FK FOREIGN KEY ( soldier_id ) REFERENCES Soldier ( id );
@@ -181,4 +183,3 @@ ALTER TABLE Specializing ADD CONSTRAINT Specializing_Specialty_FK FOREIGN KEY ( 
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Soldier_FK FOREIGN KEY ( soldier_id ) REFERENCES Soldier ( id );
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Vehicle_Type_FK FOREIGN KEY ( vehicle_type_id ) REFERENCES Vehicle_Type ( id );
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Storage_FK FOREIGN KEY ( storage_id ) REFERENCES Base ( id );
-commit;

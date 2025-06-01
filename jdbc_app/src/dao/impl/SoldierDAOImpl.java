@@ -77,18 +77,14 @@ public class SoldierDAOImpl implements SoldierDAO {
                 soldier.setFirstName(resultSet.getString(2));
                 soldier.setLastName(resultSet.getString(3));
                 soldier.setDateOfJoining(resultSet.getDate(4));
-                soldier.setRank(resultSet.getInt(5));
+                soldier.setRankId(resultSet.getInt(5));
                 soldier.setChiefId(resultSet.getInt(6));
-                soldier.setDrives(resultSet.getInt(7));
-                soldier.setSleepsAt(resultSet.getInt(8));
+                soldier.setVehicleId(resultSet.getInt(7));
+                soldier.setBarracksId(resultSet.getInt(8));
                 list.add(soldier);
             }
 
         }
-        catch (Exception e) {
-            System.out.printf(e.getMessage());
-        }
-        System.out.println(list.stream().count());
         return list;
     }
 
@@ -107,10 +103,10 @@ public class SoldierDAOImpl implements SoldierDAO {
                         soldier.setFirstName(rs.getString(2));
                         soldier.setLastName(rs.getString(3));
                         soldier.setDateOfJoining(rs.getDate(4));
-                        soldier.setRank(rs.getInt(5));
+                        soldier.setRankId(rs.getInt(5));
                         soldier.setChiefId(rs.getInt(6));
-                        soldier.setDrives(rs.getInt(7));
-                        soldier.setSleepsAt(rs.getInt(8));
+                        soldier.setVehicleId(rs.getInt(7));
+                        soldier.setBarracksId(rs.getInt(8));
                         result.add(soldier);
                     }
                 }
@@ -132,10 +128,10 @@ public class SoldierDAOImpl implements SoldierDAO {
                     soldier.setFirstName(rs.getString(2));
                     soldier.setLastName(rs.getString(3));
                     soldier.setDateOfJoining(rs.getDate(4));
-                    soldier.setRank(rs.getInt(5));
+                    soldier.setRankId(rs.getInt(5));
                     soldier.setChiefId(rs.getInt(6));
-                    soldier.setDrives(rs.getInt(7));
-                    soldier.setSleepsAt(rs.getInt(8));
+                    soldier.setVehicleId(rs.getInt(7));
+                    soldier.setBarracksId(rs.getInt(8));
                     return soldier;
                 }
             }
@@ -152,10 +148,10 @@ public class SoldierDAOImpl implements SoldierDAO {
             stmt.setString(2, entity.getFirstName());
             stmt.setString(3, entity.getLastName());
             stmt.setDate(4, new java.sql.Date(entity.getDateOfJoining().getTime()));
-            stmt.setInt(5, entity.getRank());
+            stmt.setInt(5, entity.getRankId());
             stmt.setInt(6, entity.getChiefId());
-            stmt.setInt(7, entity.getDrives());
-            stmt.setInt(8, entity.getSleepsAt());
+            stmt.setInt(7, entity.getVehicleId());
+            stmt.setInt(8, entity.getBarracksId());
             return stmt.executeUpdate() > 0;
         }
     }
@@ -172,10 +168,10 @@ public class SoldierDAOImpl implements SoldierDAO {
                 stmt.setString(2, entity.getFirstName());
                 stmt.setString(3, entity.getLastName());
                 stmt.setDate(4, new java.sql.Date(entity.getDateOfJoining().getTime()));
-                stmt.setInt(5, entity.getRank());
+                stmt.setInt(5, entity.getRankId());
                 stmt.setInt(6, entity.getChiefId());
-                stmt.setInt(7, entity.getDrives());
-                stmt.setInt(8, entity.getSleepsAt());
+                stmt.setInt(7, entity.getVehicleId());
+                stmt.setInt(8, entity.getBarracksId());
                 stmt.addBatch();
                 count++;
             }

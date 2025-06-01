@@ -7,13 +7,13 @@ public class Soldier {
     private String firstName; // first_name
     private String lastName; // last_name
     private Date dateOfJoining; // date_of_joining
-    private int rank; // rank_id
+    private int rankId; // rank_id
     private int chiefId; // chief_id
-    private int drives; // vehicle_id
-    private int sleepsAt; // barracks_id
+    private int vehicleId; // vehicle_id
+    private int barracksId; // barracks_id
 
     public static String getFormattedHeader() {
-        return String.format("%-6s %-10s %-20s %-10s %-10s %-10s %-10s %-10s", "id", "firstName", "lastName", "dateOfJoining", "rank", "chiefId", "drives", "sleepsAt");
+        return String.format("%-6s %-10s %-20s %-10s %-10s %-10s %-10s %-10s", "id", "firstName", "lastName", "dateOfJoining", "rankId", "chiefId", "vehicleId", "barracksId");
     }
 
     @Override
@@ -23,10 +23,10 @@ public class Soldier {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", dateOfJoining=" + dateOfJoining +
-                ", rank=" + rank +
+                ", rank=" + rankId +
                 ", chiefId=" + chiefId +
-                ", drives=" + drives +
-                ", sleepsAt=" + sleepsAt +
+                ", vehicleId=" + vehicleId +
+                ", barracksId=" + barracksId +
                 '}';
     }
 
@@ -34,15 +34,15 @@ public class Soldier {
 
     }
 
-    public Soldier(int id, String firstName, String lastName, Date dateOfJoining, int rank, int chiefId, int drives, int sleepsAt) {
+    public Soldier(int id, String firstName, String lastName, Date dateOfJoining, int rankId, int chiefId, int vehicleId, int barracksId) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfJoining = dateOfJoining;
-        this.rank = rank;
+        this.rankId = rankId;
         this.chiefId = chiefId;
-        this.drives = drives;
-        this.sleepsAt = sleepsAt;
+        this.vehicleId = vehicleId;
+        this.barracksId = barracksId;
     }
 
     public int getId() {
@@ -77,12 +77,12 @@ public class Soldier {
         this.dateOfJoining = dateOfJoining;
     }
 
-    public int getRank() {
-        return rank;
+    public int getRankId() {
+        return rankId;
     }
 
-    public void setRank(int rank) {
-        this.rank = rank;
+    public void setRankId(int rankId) {
+        this.rankId = rankId;
     }
 
     public int getChiefId() {
@@ -93,19 +93,19 @@ public class Soldier {
         this.chiefId = chiefId;
     }
 
-    public int getDrives() {
-        return drives;
+    public int getVehicleId() {
+        return vehicleId;
     }
 
-    public void setDrives(int drives) {
-        this.drives = drives;
+    public void setVehicleId(int vehicleId) {
+        this.vehicleId = vehicleId;
     }
 
-    public int getSleepsAt() {
-        return sleepsAt;
+    public int getBarracksId() {
+        return barracksId;
     }
 
-    public void setSleepsAt(int sleepsAt) {
-        this.sleepsAt = sleepsAt;
+    public void setBarracksId(int barracksId) {
+        this.barracksId = barracksId;
     }
 }
