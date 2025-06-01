@@ -10,7 +10,7 @@ public class SimpleQuery1UIHandler {
     private static final SoldierService missionService = new SoldierService();
 
     public void handle() {
-        System.out.println("# Query: List out all soldiers.");
+        System.out.println("# Query: List out latest mission and it's soldiers.");
         System.out.println("Run Query? [Y/n]: ");
         System.out.print("> ");
 
@@ -22,6 +22,7 @@ public class SimpleQuery1UIHandler {
 
         try {
             for (Soldier soldier : soldierService.getAll()) {
+
                 System.out.println(soldier.toString());
             }
         } catch (SQLException e) {
