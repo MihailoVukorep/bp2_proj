@@ -11,7 +11,7 @@ public class SimpleQuery1UIHandler {
     private static final SoldierService missionService = new SoldierService();
 
     public void handle() {
-        System.out.println("-- Query: Soldier mission count leaderboard descending.");
+        System.out.println("-- Simple Query: Soldier mission count leaderboard descending.");
         System.out.println("");
         System.out.println("SELECT \n" +
                            "    s.id AS soldier_id,\n" +

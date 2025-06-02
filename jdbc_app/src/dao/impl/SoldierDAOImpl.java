@@ -3,6 +3,7 @@ package dao.impl;
 import connection.ConnectionUtil_HikariCP;
 import dao.SoldierDAO;
 import dto.LatestSquadMemberDTO;
+import dto.MedalRankLeaderBoardMemberDTO;
 import dto.MissionLeaderBoardMemberDTO;
 import model.Soldier;
 
@@ -220,6 +221,30 @@ public class SoldierDAOImpl implements SoldierDAO {
                 member.setId(resultSet.getInt(1));
                 member.setFirstName(resultSet.getString(2));
                 member.setLastName(resultSet.getString(3));
+                list.add(member);
+            }
+
+        }
+        return list;
+    }
+
+    @Override
+    public List<MedalRankLeaderBoardMemberDTO> getMedalRankLeaderBoard() throws SQLException {
+        String query = "SELECT s.id, s.first_name, s.last_name, r.name AS rank_name, COUNT(m.id) AS total_medals, MIN(ms.start_date) AS first_mission FROM Soldier s JOIN Rank r ON s.rank_id = r.id LEFT JOIN Participation p ON s.id = p.soldier_id LEFT JOIN Mission ms ON p.mission_id = ms.id LEFT JOIN Medal m ON p.id = m.participation_id GROUP BY s.id, s.first_name, s.last_name, r.name HAVING COUNT(m.id) > 2 ORDER BY total_medals DESC";
+        List<MedalRankLeaderBoardMemberDTO> list = new ArrayList<MedalRankLeaderBoardMemberDTO>();
+
+        try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            while (resultSet.next()) {
+                MedalRankLeaderBoardMemberDTO member = new MedalRankLeaderBoardMemberDTO();
+                member.setSoldierId(resultSet.getInt(1));
+                member.setFirstName(resultSet.getString(2));
+                member.setLastName(resultSet.getString(3));
+                member.setRankName(resultSet.getString(4));
+                member.setTotalMedals(resultSet.getInt(5));
+                member.setFirstMissionStartDate(resultSet.getDate(6));
                 list.add(member);
             }
 

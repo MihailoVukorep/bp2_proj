@@ -18,9 +18,9 @@ public class MainUIHandler {
         do {
             System.out.println("\nMenu:");
             System.out.println(" 1 - Basic Query - List Soldiers");
-            System.out.println(" 2 - Simple Query - Soldier mission count leaderboard descending.");
-            System.out.println(" 3 - Simple Query - List out latest mission and it's soldiers.");
-            System.out.println(" 4 - Complex Query - ...");
+            System.out.println(" 2 - Simple Query - Mission LeaderBoard");
+            System.out.println(" 3 - Simple Query - Latest mission and it's soldiers.");
+            System.out.println(" 4 - Complex Query - Service (Rank+Medal) LeaderBoard");
             System.out.println(" 5 - Transactional Query - ...");
             System.out.println(" 0 - Exit");
             System.out.print("> ");

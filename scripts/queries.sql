@@ -49,8 +49,8 @@ WHERE
         FROM Mission
     );
 
--- TLDR: Medal+Rank LeaderBoard (min 2 medals)
--- Complex Query: List all soldiers with their rank, mission details, and number of medals, only show those with more than 2 medals, sorted by medal count.
+-- TLDR: Medal + Rank LeaderBoard (min 2 medals) (show first mission - beginning of service)
+-- Complex Query: List all soldiers with their rank, first mission (beginning of service), and number of medals, only show those with more than 2 medals, sorted by medal count.
 SELECT s.id, s.first_name, s.last_name, r.name AS rank_name, 
        COUNT(m.id) AS total_medals,
        MIN(ms.start_date) AS first_mission

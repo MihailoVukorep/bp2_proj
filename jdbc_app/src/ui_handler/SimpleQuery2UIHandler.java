@@ -13,7 +13,7 @@ public class SimpleQuery2UIHandler {
     private static final MissionService missionService = new MissionService();
 
     public void handle() {
-        System.out.println("-- Query: List out latest mission location and it's soldiers.");
+        System.out.println("-- Simple Query: List out latest mission location and it's soldiers.");
         System.out.println();
         System.out.println("SELECT m.*, l.country, l.city\n" +
                            "FROM Mission m\n" +

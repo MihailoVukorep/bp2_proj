@@ -3,6 +3,7 @@ package service;
 import dao.SoldierDAO;
 import dao.impl.SoldierDAOImpl;
 import dto.LatestSquadMemberDTO;
+import dto.MedalRankLeaderBoardMemberDTO;
 import dto.MissionLeaderBoardMemberDTO;
 import model.Soldier;
 
@@ -36,4 +37,9 @@ public class SoldierService {
     public List<LatestSquadMemberDTO> getLatestSquadMembers() throws SQLException {
         return soldierDAO.getLatestSquadMembers();
     }
+
+    public List<MedalRankLeaderBoardMemberDTO> getMedalRankLeaderBoard() throws SQLException {
+        return soldierDAO.getMedalRankLeaderBoard();
+    }
+
 }
