@@ -75,6 +75,7 @@ ALTER TABLE Medal_Type ADD CONSTRAINT Medal_Type_PK PRIMARY KEY ( id );
 CREATE TABLE Mission 
     ( 
 		id            NUMBER  NOT NULL , 
+		chief_id      NUMBER  NOT NULL ,
 		name          VARCHAR2 (30) , 
 		description   VARCHAR2 (256) , 
 		start_date    DATE , 
@@ -83,7 +84,6 @@ CREATE TABLE Mission
 		location_id   NUMBER  NOT NULL 
     ) 
 ;
-CREATE UNIQUE INDEX Mission_IDX ON Mission ( location_id ASC );
 ALTER TABLE Mission ADD CONSTRAINT Mission_PK PRIMARY KEY ( id );
 
 -- Participation
@@ -176,6 +176,7 @@ ALTER TABLE Participation ADD CONSTRAINT Participation_Mission_FK FOREIGN KEY ( 
 ALTER TABLE Participation ADD CONSTRAINT Participation_Soldier_FK FOREIGN KEY ( soldier_id ) REFERENCES Soldier ( id );
 ALTER TABLE Soldier ADD CONSTRAINT Soldier_Rank_FK FOREIGN KEY ( rank_id ) REFERENCES Rank ( id );
 ALTER TABLE Soldier ADD CONSTRAINT Soldier_Soldier_FK FOREIGN KEY ( chief_id ) REFERENCES Soldier ( id );
+ALTER TABLE Mission ADD CONSTRAINT Mission_Soldier_FK FOREIGN KEY ( chief_id ) REFERENCES Soldier ( id );
 ALTER TABLE Soldier ADD CONSTRAINT Soldier_Vehicle_FK FOREIGN KEY ( vehicle_id ) REFERENCES Vehicle ( id );
 ALTER TABLE Soldier ADD CONSTRAINT Soldier_Barracks_FK FOREIGN KEY ( barracks_id ) REFERENCES Base ( id );
 ALTER TABLE Specializing ADD CONSTRAINT Specializing_Soldier_FK FOREIGN KEY ( soldier_id ) REFERENCES Soldier ( id );
