@@ -8,7 +8,7 @@ public class MissionLeaderBoardMemberDTO {
     private int missionCount;
 
     public static String getFormattedHeader() {
-        return String.format("%-6s %-15s %-15s %-15s", "id", "first name", "last name", "mission count");
+        return String.format("%-6s %-15s %-15s %-15s", "ID", "First Name", "Last Name", "Mission Count");
     }
 
     @Override

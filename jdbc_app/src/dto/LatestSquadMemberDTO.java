@@ -11,7 +11,7 @@ public class LatestSquadMemberDTO {
     private String lastName;
 
     public static String getFormattedHeader() {
-        return String.format("%-6s %-15s %-15s", "id", "first name", "last name");
+        return String.format("%-6s %-15s %-15s", "ID", "First name", "Last name");
     }
 
     @Override

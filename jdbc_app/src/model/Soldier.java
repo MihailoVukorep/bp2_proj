@@ -13,21 +13,12 @@ public class Soldier {
     private int barracksId; // barracks_id
 
     public static String getFormattedHeader() {
-        return String.format("%-6s %-10s %-20s %-10s %-10s %-10s %-10s %-10s", "id", "firstName", "lastName", "dateOfJoining", "rankId", "chiefId", "vehicleId", "barracksId");
+        return String.format("%-6s %-15s %-15s %-30s %-10s %-10s %-10s %-10s", "ID", "First Name", "Last Name", "Date Of Joining", "Rank ID", "Chief ID", "Vehicle ID", "Barracks ID");
     }
 
     @Override
     public String toString() {
-        return "Soldier{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dateOfJoining=" + dateOfJoining +
-                ", rank=" + rankId +
-                ", chiefId=" + chiefId +
-                ", vehicleId=" + vehicleId +
-                ", barracksId=" + barracksId +
-                '}';
+        return String.format("%-6d %-15s %-15s %-30s %-10d %-10d %-10d %-10d", id, firstName, lastName, dateOfJoining.toString(), rankId, chiefId, vehicleId, barracksId);
     }
 
     public Soldier() {

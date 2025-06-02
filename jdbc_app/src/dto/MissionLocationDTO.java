@@ -14,7 +14,7 @@ public class MissionLocationDTO {
     private String city;
 
     public static String getFormattedHeader() {
-        return String.format("%-6s %-15s %-40s %-15s %-15s %-15s %-15s", "id", "name", "description", "start date", "end date", "country", "city");
+        return String.format("%-6s %-15s %-40s %-15s %-15s %-15s %-15s", "Id", "Name", "Description", "Start Date", "End Date", "Country", "City");
     }
 
     @Override
