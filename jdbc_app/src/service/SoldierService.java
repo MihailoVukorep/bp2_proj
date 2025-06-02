@@ -2,10 +2,13 @@ package service;
 
 import dao.SoldierDAO;
 import dao.impl.SoldierDAOImpl;
+import dto.LatestSquadMemberDTO;
+import dto.MissionLeaderBoardMemberDTO;
 import model.Soldier;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class SoldierService {
     private static final SoldierDAO soldierDAO = new SoldierDAOImpl();
@@ -24,5 +27,13 @@ public class SoldierService {
 
     public void save(Soldier soldier) throws SQLException {
         soldierDAO.save(soldier);
+    }
+
+    public List<MissionLeaderBoardMemberDTO> getMissionLeaderBoard() throws SQLException {
+        return soldierDAO.getMissionLeaderBoard();
+    }
+
+    public List<LatestSquadMemberDTO> getLatestSquadMembers() throws SQLException {
+        return soldierDAO.getLatestSquadMembers();
     }
 }

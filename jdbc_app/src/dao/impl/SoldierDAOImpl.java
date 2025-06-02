@@ -2,6 +2,8 @@ package dao.impl;
 
 import connection.ConnectionUtil_HikariCP;
 import dao.SoldierDAO;
+import dto.LatestSquadMemberDTO;
+import dto.MissionLeaderBoardMemberDTO;
 import model.Soldier;
 
 import java.sql.Connection;
@@ -178,5 +180,50 @@ public class SoldierDAOImpl implements SoldierDAO {
             stmt.executeBatch();
         }
         return count;
+    }
+
+    @Override
+    public List<MissionLeaderBoardMemberDTO> getMissionLeaderBoard() throws SQLException {
+
+        String query = "SELECT s.id AS soldier_id, s.first_name, s.last_name, COUNT(p.mission_id) AS mission_count FROM Soldier s JOIN Participation p ON s.id = p.soldier_id GROUP BY s.id, s.first_name, s.last_name ORDER BY mission_count DESC";
+        List<MissionLeaderBoardMemberDTO> list = new ArrayList<MissionLeaderBoardMemberDTO>();
+
+        try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            while (resultSet.next()) {
+                MissionLeaderBoardMemberDTO member = new MissionLeaderBoardMemberDTO();
+                member.setSoldierId(resultSet.getInt(1));
+                member.setFirstName(resultSet.getString(2));
+                member.setLastName(resultSet.getString(3));
+                member.setMissionCount(resultSet.getInt(4));
+                list.add(member);
+            }
+
+        }
+        return list;
+    }
+
+    @Override
+    public List<LatestSquadMemberDTO> getLatestSquadMembers() throws SQLException {
+
+        String query = "SELECT s.id AS soldier_id, s.first_name, s.last_name FROM Mission m JOIN Participation p ON m.id = p.mission_id JOIN Soldier s ON p.soldier_id = s.id WHERE m.start_date = ( SELECT MAX(start_date) FROM Mission )";
+        List<LatestSquadMemberDTO> list = new ArrayList<LatestSquadMemberDTO>();
+
+        try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            while (resultSet.next()) {
+                LatestSquadMemberDTO member = new LatestSquadMemberDTO();
+                member.setId(resultSet.getInt(1));
+                member.setFirstName(resultSet.getString(2));
+                member.setLastName(resultSet.getString(3));
+                list.add(member);
+            }
+
+        }
+        return list;
     }
 }

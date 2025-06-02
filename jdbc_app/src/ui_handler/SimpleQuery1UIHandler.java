@@ -1,5 +1,6 @@
 package ui_handler;
 
+import dto.MissionLeaderBoardMemberDTO;
 import model.Soldier;
 import service.SoldierService;
 
@@ -10,7 +11,22 @@ public class SimpleQuery1UIHandler {
     private static final SoldierService missionService = new SoldierService();
 
     public void handle() {
-        System.out.println("# Query: List out latest mission and it's soldiers.");
+        System.out.println("-- Query: Soldier mission count leaderboard descending.");
+        System.out.println("");
+        System.out.println("SELECT \n" +
+                           "    s.id AS soldier_id,\n" +
+                           "    s.first_name,\n" +
+                           "    s.last_name,\n" +
+                           "    COUNT(p.mission_id) AS mission_count\n" +
+                           "FROM \n" +
+                           "    Soldier s\n" +
+                           "JOIN \n" +
+                           "    Participation p ON s.id = p.soldier_id\n" +
+                           "GROUP BY \n" +
+                           "    s.id, s.first_name, s.last_name\n" +
+                           "ORDER BY \n" +
+                           "    mission_count DESC;");
+
         System.out.println("Run Query? [Y/n]: ");
         System.out.print("> ");
 
@@ -18,12 +34,11 @@ public class SimpleQuery1UIHandler {
             return;
         }
 
-        System.out.println(Soldier.getFormattedHeader());
+        System.out.println(MissionLeaderBoardMemberDTO.getFormattedHeader());
 
         try {
-            for (Soldier soldier : soldierService.getAll()) {
-
-                System.out.println(soldier.toString());
+            for (MissionLeaderBoardMemberDTO memberDTO : soldierService.getMissionLeaderBoard()) {
+                System.out.println(memberDTO.toString());
             }
         } catch (SQLException e) {
             e.printStackTrace();

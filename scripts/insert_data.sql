@@ -128,6 +128,17 @@ INSERT INTO "RANK" (ID, NAME, DESCRIPTION) VALUES (20, 'General', 'Highest peace
 -- Base
 INSERT INTO Base (id, name, location_id, type) VALUES (1, 'Alpha Barracks', 1, '1');
 INSERT INTO Base (id, name, location_id, type) VALUES (2, 'Delta Storage', 1, '2');
+INSERT INTO Base (id, name, location_id, type) VALUES (3, 'Charlie Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (4, 'Echo Storage', 1, '2');
+INSERT INTO Base (id, name, location_id, type) VALUES (5, 'Foxtrot Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (6, 'Golf Storage', 1, '2');
+INSERT INTO Base (id, name, location_id, type) VALUES (7, 'Hotel Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (8, 'India Storage', 1, '2');
+INSERT INTO Base (id, name, location_id, type) VALUES (9, 'Juliet Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (10, 'Kilo Storage', 1, '2');
+INSERT INTO Base (id, name, location_id, type) VALUES (11, 'Lima Barracks', 1, '1');
+INSERT INTO Base (id, name, location_id, type) VALUES (12, 'Mike Storage', 1, '2');
+
 
 -- Equipment_Type
 INSERT INTO Equipment_Type (id, type) VALUES (1, 'Rifle');
@@ -181,13 +192,35 @@ INSERT INTO Mission (id, name, description, start_date, end_date, status, locati
 INSERT INTO Participation (id, soldier_id, mission_id) VALUES (1, 1, 1);
 INSERT INTO Participation (id, soldier_id, mission_id) VALUES (2, 2, 1);
 INSERT INTO Participation (id, soldier_id, mission_id) VALUES (3, 3, 1);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (4, 4, 1);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (5, 5, 1);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (6, 6, 9);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (7, 7, 9);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (8, 8, 9);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (9, 9, 9);
-INSERT INTO Participation (id, soldier_id, mission_id) VALUES (10, 10, 9);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (4, 4, 2);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (5, 5, 2);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (6, 6, 2);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (7, 7, 3);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (8, 8, 3);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (9, 9, 3);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (10, 10, 4);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (11, 1, 4);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (12, 2, 4);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (13, 3, 5);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (14, 4, 5);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (15, 5, 5);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (16, 6, 6);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (17, 7, 6);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (18, 8, 6);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (19, 9, 7);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (20, 10, 7);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (21, 1, 7);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (22, 2, 8);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (23, 3, 8);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (24, 4, 8);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (25, 5, 9);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (26, 6, 9);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (27, 7, 9);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (28, 8, 1);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (29, 9, 2);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (30, 10, 3);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (31, 1, 5);
+INSERT INTO Participation (id, soldier_id, mission_id) VALUES (32, 2, 6);
 
 -- Medal_Type
 INSERT INTO Medal_Type (id, name) VALUES (1, 'Bravery');
@@ -196,5 +229,35 @@ INSERT INTO Medal_Type (id, name) VALUES (2, 'Service');
 -- Medal
 INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (1, 1, DATE '2025-01-15', 1, 'Exceptional courage in battle');
 INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (2, 2, DATE '2025-01-20', 2, 'Consistent service under pressure');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (3, 1, DATE '2025-02-01', 3, 'Bravery in a reconnaissance mission');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (4, 2, DATE '2025-02-10', 4, 'Outstanding logistical support');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (5, 1, DATE '2025-02-15', 5, 'Heroic actions during enemy engagement');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (6, 2, DATE '2025-03-01', 6, 'Dedication to duty in adverse conditions');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (7, 1, DATE '2025-03-05', 7, 'Distinguished service in combat');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (8, 2, DATE '2025-03-12', 8, 'Exemplary conduct and leadership');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (9, 1, DATE '2025-03-20', 9, 'Valor in the face of danger');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (10, 2, DATE '2025-04-01', 10, 'Meritorious achievement in training');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (11, 1, DATE '2025-04-05', 11, 'Courageous act saving lives');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (12, 2, DATE '2025-04-10', 12, 'Exceptional performance in a critical role');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (13, 1, DATE '2024-09-01', 13, 'Exceptional bravery during a high-risk extraction operation.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (14, 2, DATE '2024-09-10', 14, 'Meritorious service in maintaining critical communication lines.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (15, 1, DATE '2024-09-15', 15, 'Gallantry in defending a besieged outpost.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (16, 2, DATE '2024-09-22', 16, 'Outstanding dedication in troop welfare and logistics.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (17, 1, DATE '2024-10-03', 17, 'Acts of heroism during a direct engagement with enemy forces.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (18, 2, DATE '2024-10-11', 18, 'Consistent and reliable service in field operations.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (19, 1, DATE '2024-10-20', 19, 'Conspicuous courage under heavy fire.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (20, 2, DATE '2024-10-28', 20, 'Valuable contributions to strategic planning and execution.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (21, 1, DATE '2024-11-05', 21, 'Selfless actions to protect comrades during an ambush.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (22, 2, DATE '2024-11-14', 22, 'Distinguished record of service in multiple deployments.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (23, 1, DATE '2024-11-20', 23, 'Exceptional initiative in overcoming a critical obstacle.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (24, 2, DATE '2024-11-29', 24, 'Reliable and consistent performance in a support role.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (25, 1, DATE '2024-12-07', 25, 'Demonstrating extreme bravery during a rescue mission.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (26, 2, DATE '2024-12-16', 26, 'Commitment to excellence in technical support and maintenance.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (27, 1, DATE '2024-12-25', 27, 'Acts of valor performed under direct enemy threat.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (28, 2, DATE '2025-01-03', 28, 'Long-standing dedication to military service and values.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (29, 1, DATE '2025-01-10', 29, 'Courageous actions leading to a significant tactical advantage.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (30, 2, DATE '2025-01-18', 30, 'Professionalism and integrity in all assigned duties.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (31, 1, DATE '2025-01-25', 31, 'Displaying exceptional leadership and bravery in crisis.');
+INSERT INTO Medal (id, medal_type_id, award_date, participation_id, description) VALUES (32, 2, DATE '2025-02-01', 32, 'Distinguished performance in administrative and planning roles.');
 
 commit;

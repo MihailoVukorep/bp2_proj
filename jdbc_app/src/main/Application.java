@@ -16,6 +16,8 @@ public class Application {
             ConnectionUtil_HikariCP.closeDataSource();
         }
         catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
             ConnectionUtil_HikariCP.closeDataSource();
         }
     }

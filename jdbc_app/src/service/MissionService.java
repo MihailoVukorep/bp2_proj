@@ -2,6 +2,7 @@ package service;
 
 import dao.MissionDAO;
 import dao.impl.MissionDAOImpl;
+import dto.MissionLocationDTO;
 import model.Mission;
 import model.Soldier;
 
@@ -25,5 +26,9 @@ public class MissionService {
 
     public void save(Mission mission) throws SQLException {
         missionDao.save(mission);
+    }
+
+    public MissionLocationDTO getLatestMissionLocation()  throws SQLException {
+        return missionDao.getLatestMissionLocation();
     }
 }
