@@ -1,7 +1,6 @@
 package ui_handler;
 
-import dto.MissionLeaderBoardMemberDTO;
-import model.Soldier;
+import dto.SoldierMissionCountDTO;
 import service.SoldierService;
 
 import java.sql.SQLException;
@@ -34,10 +33,10 @@ public class SimpleQuery1UIHandler {
             return;
         }
 
-        System.out.println(MissionLeaderBoardMemberDTO.getFormattedHeader());
+        System.out.println(SoldierMissionCountDTO.getFormattedHeader());
 
         try {
-            for (MissionLeaderBoardMemberDTO memberDTO : soldierService.getMissionLeaderBoard()) {
+            for (SoldierMissionCountDTO memberDTO : soldierService.getMissionLeaderBoard()) {
                 System.out.println(memberDTO.toString());
             }
         } catch (SQLException e) {

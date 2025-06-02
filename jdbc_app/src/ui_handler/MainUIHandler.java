@@ -21,7 +21,7 @@ public class MainUIHandler {
             System.out.println(" 2 - Simple Query - Mission LeaderBoard");
             System.out.println(" 3 - Simple Query - Latest mission and it's soldiers.");
             System.out.println(" 4 - Complex Query - Service (Rank+Medal) LeaderBoard");
-            System.out.println(" 5 - Transactional Query - ...");
+            System.out.println(" 5 - Transactional Query - Update Ranks (5 missions = +1 rank, +1 new rifle for soldier)");
             System.out.println(" 0 - Exit");
             System.out.print("> ");
             answer = sc.nextLine();

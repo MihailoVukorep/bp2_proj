@@ -2,7 +2,7 @@ package dto;
 
 import java.sql.Date;
 
-public class MedalRankLeaderBoardMemberDTO {
+public class SoldierRankMedalsDTO {
     private int soldierId;
     private String firstName;
     private String lastName;

@@ -3,8 +3,9 @@ package dao.impl;
 import connection.ConnectionUtil_HikariCP;
 import dao.SoldierDAO;
 import dto.LatestSquadMemberDTO;
-import dto.MedalRankLeaderBoardMemberDTO;
-import dto.MissionLeaderBoardMemberDTO;
+import dto.SoldierMissionCountRankDTO;
+import dto.SoldierRankMedalsDTO;
+import dto.SoldierMissionCountDTO;
 import model.Soldier;
 
 import java.sql.Connection;
@@ -184,21 +185,46 @@ public class SoldierDAOImpl implements SoldierDAO {
     }
 
     @Override
-    public List<MissionLeaderBoardMemberDTO> getMissionLeaderBoard() throws SQLException {
+    public List<SoldierMissionCountDTO> getMissionLeaderBoard() throws SQLException {
 
         String query = "SELECT s.id AS soldier_id, s.first_name, s.last_name, COUNT(p.mission_id) AS mission_count FROM Soldier s JOIN Participation p ON s.id = p.soldier_id GROUP BY s.id, s.first_name, s.last_name ORDER BY mission_count DESC";
-        List<MissionLeaderBoardMemberDTO> list = new ArrayList<MissionLeaderBoardMemberDTO>();
+        List<SoldierMissionCountDTO> list = new ArrayList<SoldierMissionCountDTO>();
 
         try (Connection connection = ConnectionUtil_HikariCP.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query);
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
             while (resultSet.next()) {
-                MissionLeaderBoardMemberDTO member = new MissionLeaderBoardMemberDTO();
+                SoldierMissionCountDTO member = new SoldierMissionCountDTO();
                 member.setSoldierId(resultSet.getInt(1));
                 member.setFirstName(resultSet.getString(2));
                 member.setLastName(resultSet.getString(3));
                 member.setMissionCount(resultSet.getInt(4));
+                list.add(member);
+            }
+
+        }
+        return list;
+    }
+
+    @Override
+    public List<SoldierMissionCountRankDTO> getMissionRankLeaderBoard() throws SQLException {
+
+        String query = "SELECT s.id AS soldier_id, s.first_name, s.last_name, COUNT(p.mission_id) AS mission_count, r.id AS rank_id, r.name AS rank_name FROM Soldier s LEFT JOIN Participation p ON s.id = p.soldier_id LEFT JOIN Rank r ON s.rank_id = r.id GROUP BY s.id, s.first_name, s.last_name, r.id, r.name ORDER BY mission_count DESC";
+        List<SoldierMissionCountRankDTO> list = new ArrayList<SoldierMissionCountRankDTO>();
+
+        try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            while (resultSet.next()) {
+                SoldierMissionCountRankDTO member = new SoldierMissionCountRankDTO();
+                member.setSoldierId(resultSet.getInt(1));
+                member.setFirstName(resultSet.getString(2));
+                member.setLastName(resultSet.getString(3));
+                member.setMissionCount(resultSet.getInt(4));
+                member.setRankId(resultSet.getInt(5));
+                member.setRankName(resultSet.getString(6));
                 list.add(member);
             }
 
@@ -229,16 +255,16 @@ public class SoldierDAOImpl implements SoldierDAO {
     }
 
     @Override
-    public List<MedalRankLeaderBoardMemberDTO> getMedalRankLeaderBoard() throws SQLException {
+    public List<SoldierRankMedalsDTO> getMedalRankLeaderBoard() throws SQLException {
         String query = "SELECT s.id, s.first_name, s.last_name, r.name AS rank_name, COUNT(m.id) AS total_medals, MIN(ms.start_date) AS first_mission FROM Soldier s JOIN Rank r ON s.rank_id = r.id LEFT JOIN Participation p ON s.id = p.soldier_id LEFT JOIN Mission ms ON p.mission_id = ms.id LEFT JOIN Medal m ON p.id = m.participation_id GROUP BY s.id, s.first_name, s.last_name, r.name HAVING COUNT(m.id) > 2 ORDER BY total_medals DESC";
-        List<MedalRankLeaderBoardMemberDTO> list = new ArrayList<MedalRankLeaderBoardMemberDTO>();
+        List<SoldierRankMedalsDTO> list = new ArrayList<SoldierRankMedalsDTO>();
 
         try (Connection connection = ConnectionUtil_HikariCP.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(query);
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
             while (resultSet.next()) {
-                MedalRankLeaderBoardMemberDTO member = new MedalRankLeaderBoardMemberDTO();
+                SoldierRankMedalsDTO member = new SoldierRankMedalsDTO();
                 member.setSoldierId(resultSet.getInt(1));
                 member.setFirstName(resultSet.getString(2));
                 member.setLastName(resultSet.getString(3));
@@ -251,4 +277,55 @@ public class SoldierDAOImpl implements SoldierDAO {
         }
         return list;
     }
+
+    @Override
+    public void promoteSoldiers() throws SQLException {
+
+        Connection conn = ConnectionUtil_HikariCP.getConnection();
+        conn.setAutoCommit(false);
+
+        try {
+            PreparedStatement soldierStmt = conn.prepareStatement("SELECT id, rank_id FROM Soldier");
+            ResultSet soldierRs = soldierStmt.executeQuery();
+
+            while (soldierRs.next()) {
+                int soldierId = soldierRs.getInt("id");
+                int currentRank = soldierRs.getInt("rank_id");
+
+                // count missions
+                PreparedStatement missionCountStmt = conn.prepareStatement("SELECT COUNT(*) FROM Participation WHERE soldier_id = ?");
+                missionCountStmt.setInt(1, soldierId);
+                ResultSet missionRs = missionCountStmt.executeQuery();
+                missionRs.next();
+                int missionCount = missionRs.getInt(1);
+
+                // new rank
+                int calculatedRank = Math.min(1 + (missionCount / 5), 20); // Cap at max rank
+                if (calculatedRank > currentRank) {
+                    PreparedStatement promoteStmt = conn.prepareStatement("UPDATE Soldier SET rank_id = ? WHERE id = ?"); // promote
+                    promoteStmt.setInt(1, calculatedRank);
+                    promoteStmt.setInt(2, soldierId);
+                    promoteStmt.executeUpdate();
+
+                    // award new rifle to soldier (equipment_type_id 1 = rifle, storage_id = 1)
+                    PreparedStatement awardStmt = conn.prepareStatement(
+                            "INSERT INTO Equipment (id, status, equipment_type_id, soldier_id, storage_id) " +
+                                    "VALUES (EQUIPMENT_SEQ.NEXTVAL, 1, 1, ?, 1)"
+                    );
+                    awardStmt.setInt(1, soldierId);
+                    awardStmt.executeUpdate();
+                    System.out.println("Promoted soldier " + soldierId + " to rank " + calculatedRank);
+                }
+            }
+
+            conn.commit();
+        } catch (SQLException e) {
+            conn.rollback();
+            throw e;
+        } finally {
+            conn.setAutoCommit(true);
+            conn.close();
+        }
+    }
+
 }

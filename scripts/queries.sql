@@ -62,3 +62,26 @@ LEFT JOIN Medal m ON p.id = m.participation_id
 GROUP BY s.id, s.first_name, s.last_name, r.name
 HAVING COUNT(m.id) > 2
 ORDER BY total_medals DESC;
+
+
+-- TLDR: Update Rank + Award weapon
+
+
+-- list out soldier, mission count, rank
+SELECT 
+    s.id AS soldier_id,
+    s.first_name,
+    s.last_name,
+    COUNT(p.mission_id) AS mission_count,
+    r.id AS rank_id,
+    r.name AS rank_name
+FROM 
+    Soldier s
+LEFT JOIN 
+    Participation p ON s.id = p.soldier_id
+LEFT JOIN 
+    Rank r ON s.rank_id = r.id
+GROUP BY 
+    s.id, s.first_name, s.last_name, r.id, r.name
+ORDER BY 
+    mission_count DESC;

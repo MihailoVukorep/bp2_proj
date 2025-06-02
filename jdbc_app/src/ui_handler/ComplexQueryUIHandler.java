@@ -1,7 +1,6 @@
 package ui_handler;
 
-import dto.MedalRankLeaderBoardMemberDTO;
-import model.Soldier;
+import dto.SoldierRankMedalsDTO;
 import service.SoldierService;
 
 import java.sql.SQLException;
@@ -34,10 +33,10 @@ public class ComplexQueryUIHandler {
             return;
         }
 
-        System.out.println(MedalRankLeaderBoardMemberDTO.getFormattedHeader());
+        System.out.println(SoldierRankMedalsDTO.getFormattedHeader());
 
         try {
-            for (MedalRankLeaderBoardMemberDTO memberDTO : soldierService.getMedalRankLeaderBoard()) {
+            for (SoldierRankMedalsDTO memberDTO : soldierService.getMedalRankLeaderBoard()) {
                 System.out.println(memberDTO.toString());
             }
         } catch (SQLException e) {

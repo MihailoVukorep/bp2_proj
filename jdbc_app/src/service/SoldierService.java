@@ -3,8 +3,9 @@ package service;
 import dao.SoldierDAO;
 import dao.impl.SoldierDAOImpl;
 import dto.LatestSquadMemberDTO;
-import dto.MedalRankLeaderBoardMemberDTO;
-import dto.MissionLeaderBoardMemberDTO;
+import dto.SoldierMissionCountRankDTO;
+import dto.SoldierRankMedalsDTO;
+import dto.SoldierMissionCountDTO;
 import model.Soldier;
 
 import java.sql.SQLException;
@@ -30,7 +31,7 @@ public class SoldierService {
         soldierDAO.save(soldier);
     }
 
-    public List<MissionLeaderBoardMemberDTO> getMissionLeaderBoard() throws SQLException {
+    public List<SoldierMissionCountDTO> getMissionLeaderBoard() throws SQLException {
         return soldierDAO.getMissionLeaderBoard();
     }
 
@@ -38,8 +39,17 @@ public class SoldierService {
         return soldierDAO.getLatestSquadMembers();
     }
 
-    public List<MedalRankLeaderBoardMemberDTO> getMedalRankLeaderBoard() throws SQLException {
+    public List<SoldierRankMedalsDTO> getMedalRankLeaderBoard() throws SQLException {
         return soldierDAO.getMedalRankLeaderBoard();
     }
+
+    public List<SoldierMissionCountRankDTO> getMissionRankLeaderBoard() throws SQLException {
+        return soldierDAO.getMissionRankLeaderBoard();
+    }
+
+    public void promoteAndEquipSoldiers() throws SQLException {
+        soldierDAO.promoteSoldiers();
+    }
+
 
 }

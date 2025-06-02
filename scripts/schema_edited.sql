@@ -184,3 +184,7 @@ ALTER TABLE Specializing ADD CONSTRAINT Specializing_Specialty_FK FOREIGN KEY ( 
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Soldier_FK FOREIGN KEY ( soldier_id ) REFERENCES Soldier ( id );
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Vehicle_Type_FK FOREIGN KEY ( vehicle_type_id ) REFERENCES Vehicle_Type ( id );
 ALTER TABLE Vehicle ADD CONSTRAINT Vehicle_Storage_FK FOREIGN KEY ( storage_id ) REFERENCES Base ( id );
+
+
+-- SQ for adding weapons
+CREATE SEQUENCE EQUIPMENT_SEQ START WITH 1000 INCREMENT BY 1;

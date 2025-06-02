@@ -1,6 +1,6 @@
 package dto;
 
-public class MissionLeaderBoardMemberDTO {
+public class SoldierMissionCountDTO {
 
     private int soldierId;
     private String firstName;
@@ -16,9 +16,9 @@ public class MissionLeaderBoardMemberDTO {
         return String.format("%-6d %-15s %-15s %-15d", soldierId, firstName, lastName, missionCount);
     }
 
-    public MissionLeaderBoardMemberDTO() { }
+    public SoldierMissionCountDTO() { }
 
-    public MissionLeaderBoardMemberDTO(int soldierId, String firstName, String lastName, int missionCount) {
+    public SoldierMissionCountDTO(int soldierId, String firstName, String lastName, int missionCount) {
         this.soldierId = soldierId;
         this.firstName = firstName;
         this.lastName = lastName;

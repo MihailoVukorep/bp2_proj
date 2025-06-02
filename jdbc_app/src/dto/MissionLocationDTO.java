@@ -22,8 +22,6 @@ public class MissionLocationDTO {
         return String.format("%-6s %-15s %-40s %-15s %-15s %-15s %-15s", id, name, description, startDate.toString(), endDate.toString(), country, city);
     }
 
-
-
     public MissionLocationDTO() {}
 
     public int getId() {
